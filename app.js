@@ -172,17 +172,6 @@ while (p <= argument) {
     p++
 }
 
-// Right Isosceles
-let l = argument
-while (l > 0) {
-    const currentLine = []
-    for (let i = 0; i < l; i++){
-        currentLine.push("#")
-    }
-    console.log(currentLine.join("") + "\n")
-    l--
-}
-
 // Upside Down Left
 let q = argument
 while (q > 0) {
@@ -193,5 +182,3 @@ while (q > 0) {
     console.log(currentLine.join("") + "\n")
     q--
 }
-
-// Upside down right
