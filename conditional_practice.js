@@ -42,8 +42,8 @@ const reuben = ["Reuben", 22, "Durham"];
 const jimClark = ["Jim C", 186, "LA"];
 const ryan = ["Ryan", 65, "Denver"];
 
-const people = [kenny, jimHaff, reuben, jimClark, ryan]
-console.log(people)
+const people = [kenny, jimHaff, reuben, jimClark, ryan];
+console.log(people);
 
 kenny[0] = "Gameboy";
 jimClark[1] +=1;
@@ -52,6 +52,21 @@ reuben.pop();
 reuben.push("Chicago");
 jimHaff.pop();
 jimHaff.push("Seattle", "San Francisco" ,"Auckland");
-jimHaff.splice(jimHaff.length-3,1)
+jimHaff.splice(jimHaff.length-3,1);
 
-console.log(people)
+console.log(people);
+
+//Yell at the Ninja Turtles
+let nTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+for( let i = 0;i< nTurtles.length;i++){
+  let turtle = nTurtles[i];
+  solution = '';
+  for (let j = 0 ; j < turtle.length ; j++){
+    if ((j+1)%2){
+      solution += turtle[j].toUpperCase();
+    }else{
+      solution += turtle[j];
+    }
+  }
+  console.log(solution)
+  }
