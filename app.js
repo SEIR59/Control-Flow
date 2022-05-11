@@ -51,3 +51,40 @@ else if(f % 3 ===0){
 else{
 console.log(f)
 }
+
+
+//commit 5 Getting to know you
+
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+// 1.
+const indexOfKenny = kenny.indexOf('Kenny');
+console.log(indexOfKenny);
+if(indexOfKenny !==-1)
+kenny[indexOfKenny] = 'Gameboy'
+console.log(kenny)
+
+// 2.
+jimHaff[1] +=1;
+console.log(jimHaff);
+
+// 3.
+const indexOfRyan = ryan.indexOf('Denver');
+console.log(indexOfRyan);
+if(indexOfRyan !==-1)
+ryan[indexOfRyan] = 'Gotham City'
+console.log(ryan)
+
+// 4.
+reuben.pop();
+reuben.push("chicago");
+console.log(reuben);
+
+// 5.
+jimHaff.pop();
+jimHaff.push("Philly","Atlanta","Boston");
+console.log(jimHaff);
