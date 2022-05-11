@@ -197,3 +197,17 @@ for (let i = 0; i < argument;i++){
   }
   console.log(base);
 }
+
+//Find the Median
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+nums.sort();
+//console.log(nums);
+//console.log(nums.length);
+if (nums.length%2 == 1){
+  let dist = (nums.length-1)/2;
+  console.log(nums[dist]);
+}else{
+  let dist = (nums.length/2);
+  let median = (nums[dist-1]+nums[dist])/2;
+  console.log(median);
+}
