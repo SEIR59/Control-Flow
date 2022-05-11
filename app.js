@@ -58,4 +58,21 @@ jimHaff.pop();
 jimHaff.push("New York", "Goshen", "Ozone Park");
 
 // 6. 
-jimHaff.splice(0,1);
+jimHaff.splice(2,1);
+
+// Yell at the Ninja turtles
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+let currentTurtle;
+let funkyTurtle = "";
+for (let i = 0; i < ninjaTurtles.length; i++) {
+    funkyTurtle = "";
+    currentTurtle = ninjaTurtles[i].toLowerCase();
+    currentTurtle = currentTurtle.split('');
+    for (let j = 0; j < currentTurtle.length; j++) {
+        if ( j % 2 === 0) {
+             currentTurtle[j] = currentTurtle[j].toUpperCase();
+        }
+        funkyTurtle = funkyTurtle.concat(currentTurtle[j]);
+    }
+    console.log(funkyTurtle);
+}
