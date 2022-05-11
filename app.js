@@ -135,3 +135,12 @@ console.log("Kristyn is wearing " + kristynsCloset[Math.floor(Math.random()*kris
 
 // Thoms Outfits
 console.log("Thom is wearing " + thomsCloset[0][Math.floor(Math.random()*thomsCloset[0].length)] + ", " + thomsCloset[1][Math.floor(Math.random()*thomsCloset[1].length)] + ", " + thomsCloset[2][Math.floor(Math.random()*thomsCloset[2].length)])
+
+
+// Dirty Laundry
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+console.log("WHIRR: Now washing " + kristynsCloset[Math.floor(Math.random()*kristynsCloset.length)])
+
+// Inventory
+// 2. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+console.log(thomsCloset[0] + ", " + thomsCloset[1] + ", " + thomsCloset[2])
