@@ -17,13 +17,13 @@ for (let b = 1; b <= 20; b++){
 }
 // Fizz Bizz
 for (let c = 1; c <= 100; i ++){
-    if (c / 3){
-        console.log(`Fizz`)
+    if (c % 3 === 0 && c % 5 === 0){
+        console.log(`FizzBuzz`)
     }
-    if else (c / 5) {
+    else if (c % 5 === 0) {
         console.log(`Buzz`)
     }
-    else (c / 3 && c / 5){
-        console.log(`FizzBuzz`)
+    else if (c % 3 === 0){
+        console.log(`Fizz`)
     }
 }
