@@ -3,6 +3,9 @@
 
 for (let i=1; i<=20; i++) console.log(i)
 
+
+//****************************************************************************************************************************************************************************************
+
 // ## Get Even
 // 1. Write a `for` loop that will log only the even numbers in 0 through 200.
 // >Hint: Think about the increment expression.
@@ -153,3 +156,34 @@ for (let i=0; i<thomsCloset.length; i++){
     let typeOfClothing = (i === 0 ? 'Shirts' : i === 1 ? 'Pants' : 'Accessories')
     console.log(`${typeOfClothing}:` + JSON.stringify(thomsCloset[i]))
 } 
+
+
+//****************************************************************************************************************************************************************************************
+
+
+// ## Multiples of 3 and 5
+
+// _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
+
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+// Find the **sum** of all the multiples of 3 or 5 below 1000.
+
+
+const answerArr = [];
+for (let i=1; i<1000; i++){
+    if (i % 3 === 0 || i % 5 === 0) answerArr.push(i)
+}
+let sum = answerArr.reduce((a,b) => a+b)
+console.log(sum)
+
+// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+
+// >Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
+
+// <hr>
+// &#x1F534; The commit message should read: <br>
+// "Commit 9 - Project Euler Problem 1 answered"
+// <hr>
+
+// ---
