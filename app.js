@@ -29,17 +29,20 @@
 
 //2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
-// let i = 0;
-
-// for(let i = 0; i <= 20; i++){
-//     function getRandomInt(max) {
-//         randomNum = Math.floor(Math.random() * max);
-//         console.log(randomNum);
-//         i++;
-//       }
-//     getRandomInt(2);
-// }
+for(let i = 0; i <= 20; i++){
+  if(i % 2 === 0) {
+    r = Math.floor(Math.random() * 3);
+    if(r===0){
+      console.log("..human...why you taking pictures of me?...")
+    } else if ( r===1){
+      console.log("...the catnip made me do it...")
+    } else {
+      console.log("...the catnip made me do it...")
+    }
+}
+}
     
+
 // ## Fizz Buzz 
 
 // >NOTE: THIS IS A CLASSIC RITE-OF-PASSAGE FOR JAVASCRIPT PROGRAMMERS, ESPECIALLY ONES AT GA
@@ -175,14 +178,26 @@ console.log(kristynsShoe)
 // Continue looking at the closet arrays:
 // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
-for(i = 0; i < kristynsCloset.length; i++){
-  i++;
-  console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
-}
+// for(i = 0; i < kristynsCloset.length; i++){
+//   i++;
+//   console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
+// }
 
 // ### Inventory
 // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 
-for(i = 0; i < thomsCloset.length; i++){
-  console.log(thomsCloset[i])
-}
+// for(i = 0; i < thomsCloset.length; i++){
+//   console.log(thomsCloset[i])
+// }
+
+// ## Multiples of 3 and 5
+
+// _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
+
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+// Find the **sum** of all the multiples of 3 or 5 below 1000.
+
+// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+
+// >Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
