@@ -116,7 +116,7 @@ jimHaff.push("Boston","NewYork","DC");
 
 // 3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 
-// ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+// const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
 // for(let i = 0; i<ninjaTurtles.length; i++){
 //   console.log(ninjaTurtles[i].toUpperCase())
@@ -167,6 +167,22 @@ console.log(kristynsShoe)
 // ### Dress 'em Up
 // 1. Let's create some outfits for both Kristyn and Thom. Select 3 elements from `kristynsCloset` and inject them into a sentence that reads, for example, "Kristyn is wearing green pants, a right sock, and marshmallow peeps" so that "green pants", "right sock", and "marshmallow peeps" are dynamically injected into the string. Do the same thing for Thom using `thomsCloset`. (Here's a suggestion that's not required: If you really want to challenge yourself, see if you can make the selections randomly from each of their arrays.)
 
-console.log(`kristyn is wearing ${kristynsCloset[1]} , a ${kristynsCloset[2]} , and a ${kristynsCloset[3]}`)
+// console.log(`kristyn is wearing ${kristynsCloset[1]} , a ${kristynsCloset[2]} , and a ${kristynsCloset[3]}`)
 
-console.log(`Thom is wearing ${thomsCloset[0][0]}, a ${thomsCloset[1][1]}, and a ${thomsCloset[2][2]}`)
+// console.log(`Thom is wearing ${thomsCloset[0][0]}, a ${thomsCloset[1][1]}, and a ${thomsCloset[2][2]}`)
+
+// ### Dirty Laundry
+// Continue looking at the closet arrays:
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+for(i = 0; i < kristynsCloset.length; i++){
+  i++;
+  console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
+}
+
+// ### Inventory
+// 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+
+for(i = 0; i < thomsCloset.length; i++){
+  console.log(thomsCloset[i])
+}
