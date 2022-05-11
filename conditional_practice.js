@@ -133,3 +133,12 @@ const kristynsCloset = [
   
   let tOutfit = randomOutfit(thomsCloset);
   console.log(`Thom is wearing his ${tOutfit[0]}, the ${tOutfit[1]}, and some ugly, overly large ${tOutfit[2]}.`);
+
+  // Dirty Laundry
+for (let i = 0 ; i < kristynsCloset.length;i++){
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+  }
+  //logging specifically the entire arrays, not each element within each array.
+  for (let i = 0 ; i < thomsCloset.length;i++){
+    console.log(thomsCloset[i]);
+  }
