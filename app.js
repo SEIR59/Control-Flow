@@ -42,3 +42,13 @@ reuben.pop();
 reuben.push("Chicago";)
 jimHaff.pop()
 jimHaff.push("New York City", "San Francisco", "Guangzhou");
+
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let n = 0; n < ninjaTurtles.length; n++ ){
+    let currentTurtle = ninjaTurtles[i];
+
+    currentTurtle.toUpperCase();
+}
+
+console.log(ninjaTurtles);
