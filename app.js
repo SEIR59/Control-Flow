@@ -88,3 +88,12 @@ console.log(reuben);
 jimHaff.pop();
 jimHaff.push("Philly","Atlanta","Boston");
 console.log(jimHaff);
+
+
+// Commit 6 Yell at the Ninja Turtles
+let turtle= ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for(let t = 0; t<turtle.length; t++){
+    console.log(turtle[t].toUpperCase()); 
+}
+    
