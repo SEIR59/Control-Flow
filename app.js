@@ -12,7 +12,7 @@ for (let i = 0; i <= 200; i += 2) {
 for (let i = 0; i < 20; i++) {
     console.log("Love me, pet me! HSSSSSS!")
     if ((i % 2) === 0) {
-        const temp = Math.floor(Math.random()*3)
+        const temp = Math.floor(Math.random() * 3)
         if (temp === 0) {
             console.log("...human...why you taking pictures of me?...")
         }
@@ -26,7 +26,22 @@ for (let i = 0; i < 20; i++) {
 }
 
 // 4 - Fizz Buzz
-
+for (let i = 1; i <= 100; i++) {
+    if ((i % 3) === 0) {
+        if ((i % 5) === 0) {
+            console.log('FizzBuzz')
+        }
+        else {
+            console.log('Fizz')
+        }
+    }
+    else if ((i % 5) === 0) {
+        console.log('Buzz')
+    }
+    else {
+        console.log(i);
+    }
+}
 
 // 5 - Getting to Know You
 
