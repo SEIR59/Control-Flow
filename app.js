@@ -4,8 +4,12 @@ for (let i = 1; i <= 20; i++) {
 }
 
 // 2 - Get Even
+for (let i = 0; i <= 200; i += 2) {
+    console.log(i)
+}
 
 // 3 - Excited Kittens
+
 
 // 4 - Fizz Buzz
 
