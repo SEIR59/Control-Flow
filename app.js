@@ -144,3 +144,13 @@ console.log("WHIRR: Now washing " + kristynsCloset[Math.floor(Math.random()*kris
 // Inventory
 // 2. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 console.log(thomsCloset[0] + ", " + thomsCloset[1] + ", " + thomsCloset[2])
+
+
+// Multiples of 3 and 5
+// Find the sum of all the multiples of 3 or 5 below 1000
+totalSum = 0
+for (let i = 1; i < 1000; i++) {
+    if (i%3 === 0 || i%5 === 0) {
+        totalSum += i
+    }
+}
