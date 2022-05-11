@@ -63,7 +63,15 @@ jimHaff.pop()
 jimHaff.push("Baltimore", "Seattle", "Austin")
 
 // 6 - Yell at the Ninja Turtles
-
+const arr = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+        arr[i] = arr[i].toUpperCase();
+    }
+    else {
+        arr[i] = arr[i].toLowerCase();
+    }
+}
 
 // 7 - Kristyn and Thom have their outfits ready for class
 
