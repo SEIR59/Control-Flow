@@ -26,21 +26,27 @@ const reuben = ["Reuben", 22, "Durham"];
 const jimClark = ["Jim C", 186, "LA"];
 const ryan = ["Ryan", 65, "Denver"];
 
-kenny[0] = "Gameboy"
-console.log(kenny)
+// kenny[0] = "Gameboy"
+// console.log(kenny)
 
-jimClark[1] += 1
-console.log(jimClark)
+// jimClark[1] += 1
+// console.log(jimClark)
 
-reuben.pop(2)
-console.log(reuben)
-reuben.push("Chicago")
-console.log(reuben)
+// reuben.pop(2)
+// console.log(reuben)
+// reuben.push("Chicago")
+// console.log(reuben)
 
-jimHaff.pop(2)
-console.log(reuben)
-jimHaff.push("Boston","New york","Florida")
-console.log(jimHaff)
-jimHaff.splice(2,1)
-console.log(jimHaff)
+// jimHaff.pop(2)
+// console.log(reuben)
+// jimHaff.push("Boston","New york","Florida")
+ // console.log(jimHaff)
+// jimHaff.splice(2,1)
+// console.log(jimHaff)
+
+const ninjaTurtles =(Donatello, Leonardo, Raphael, Michaelangelo)
+
+for (i = 0; i < ninjaTurtles.length; i++){
+    console.log(ninjaTurtles[1].toUpperCase)
+}
 
