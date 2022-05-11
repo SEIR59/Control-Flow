@@ -15,15 +15,17 @@ for (let i = 0; i <= 200; i = i + 2){
 // // 2. For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 for (let i = 0; i <= 20; i++){
     console.log("Love me, pet me! HSSSSSS!")
-    r = Math.floor(Math.random()*3)
-    if (r === 0) {
-        console.log("...human...why you taking pictures of me?...")
-    }
-    else if (r === 1) {
-        console.log("...the catnip made me do it...")
-    }
-    else if (r === 2) {
-        console.log("...why does the red dot always get away...")
+    if (i%2 === 0) {
+        r = Math.floor(Math.random()*3)
+        if (r === 0) {
+            console.log("...human...why you taking pictures of me?...")
+        }
+        else if (r === 1) {
+            console.log("...the catnip made me do it...")
+        }
+        else if (r === 2) {
+            console.log("...why does the red dot always get away...")
+        }
     }
 }
 
@@ -76,7 +78,7 @@ jimHaff[2].splice(2, 1)
 
 // Yell at the Ninja Turtles
 // 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
-members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+const members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 // 2. Use a for loop to call .toUpperCase() on each of them and print out the result.
 for (let i = 0; i < members.length; i++){
     console.log(members[i].toUpperCase()) 
@@ -148,9 +150,48 @@ console.log(thomsCloset[0] + ", " + thomsCloset[1] + ", " + thomsCloset[2])
 
 // Multiples of 3 and 5
 // Find the sum of all the multiples of 3 or 5 below 1000
-totalSum = 0
+let totalSum = 0
 for (let i = 1; i < 1000; i++) {
     if (i%3 === 0 || i%5 === 0) {
         totalSum += i
     }
 }
+
+// Hell yeah I'm hungry for more! 
+// Triangles 
+let argument = 7
+
+// Left Isosceles
+let p = 1
+while (p <= argument) {
+    const currentLine = []
+    for (let i = 0; i < p; i++){
+        currentLine.push("#")
+    }
+    console.log(currentLine.join("") + "\n")
+    p++
+}
+
+// Right Isosceles
+let l = argument
+while (l > 0) {
+    const currentLine = []
+    for (let i = 0; i < l; i++){
+        currentLine.push("#")
+    }
+    console.log(currentLine.join("") + "\n")
+    l--
+}
+
+// Upside Down Left
+let q = argument
+while (q > 0) {
+    const currentLine = []
+    for (let i = 0; i < q; i++){
+        currentLine.push("#")
+    }
+    console.log(currentLine.join("") + "\n")
+    q--
+}
+
+// Upside down right
