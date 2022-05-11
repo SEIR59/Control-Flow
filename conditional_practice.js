@@ -142,3 +142,14 @@ for (let i = 0 ; i < kristynsCloset.length;i++){
   for (let i = 0 ; i < thomsCloset.length;i++){
     console.log(thomsCloset[i]);
   }
+
+  //Multiples of 3 and 5
+let solution = 0;
+for (let i = 0; i < 1000;i++){
+  if (i%3 == 0){
+    solution +=i;
+  }else if (i%5 == 0){
+    solution += i;
+  }
+} 
+console.log(solution);
