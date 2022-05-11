@@ -9,7 +9,21 @@ for (let i = 0; i <= 200; i += 2) {
 }
 
 // 3 - Excited Kittens
-
+for (let i = 0; i < 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!")
+    if ((i % 2) === 0) {
+        const temp = Math.floor(Math.random()*3)
+        if (temp === 0) {
+            console.log("...human...why you taking pictures of me?...")
+        }
+        else if (temp === 1) {
+            console.log("...the catnip made me do it...")
+        }
+        else if (temp === 2) {
+            console.log("...why does the red dot always get away...")
+        }
+    }
+}
 
 // 4 - Fizz Buzz
 
