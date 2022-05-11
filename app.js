@@ -260,3 +260,33 @@ for (let i = argument; i != 0; i--) {
 // ```
 
 // 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
+
+
+// ## Find the Median
+// - Find the median number in the following `nums` array, then console.log that number.
+// - _hint_ this will likely involve breaking down the problem into a few steps
+// -  _hint_: Click "Details" below (don't read this unless you've been stuck for a while) 
+// <details>
+// if you check the length of the array / 2, you might get not get a whole number. In which case, look into `Math.floor( // something )`
+// </details>
+
+// ```javascript
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+
+// Expected output:
+// => 15
+
+const medianNumber = nums => {
+    
+    nums = nums.sort((num1, num2) => {
+        return num1 - num2;
+    });
+
+    if (nums.length % 2 !== 0){
+        return nums[Math.floor(nums.length / 2)];
+    } else {
+        return (nums[Math.floor(nums.length / 2) - 1] + nums[Math.floor(nums.length / 2)]) / 2
+    }
+  };
+
+console.log(medianNumber(nums));
