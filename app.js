@@ -71,6 +71,14 @@ const secondCity = reuben.push("Chicago");
 // Jim Haff can be in any of the 3 cities
 jimHaff.splice(2, 3, "Los Angeles", "New York", "Philly")  
    console.log(jimHaff)
-
+// Jim forgot he can only live in 2 places at once
 jimHaff.splice(2, 1, );
    console.log(jimHaff)
+
+// 6. Yell at the Ninja Turtles
+
+const ninjaTurtles= ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+
+for (let t = 0; t < ninjaTurtles.length; t++){
+    console.log(ninjaTurtles[t].toUpperCase());
+}
