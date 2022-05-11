@@ -21,7 +21,7 @@ for (let i = 0 ; i<20 ; i++){
 
   // Fizz Buzz
 for (let i = 1 ; i <101 ; i++){
-    solution = '';
+    let solution = '';
     if (i%3 ==0){
       solution +="Fizz";
     }
