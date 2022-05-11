@@ -91,6 +91,27 @@ console.log(jimHaff)
 
 //****************************************************************************************************************************************************************************************
 
+// ## Yell at the Ninja Turtles
+// 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+
+// 2. Use a `for loop` to call `.toUpperCase()` on each of them and print out the result.
+
+for (let i=0; i<ninjaTurtles.length; i++) console.log(ninjaTurtles[i].toUpperCase())
+
+// 3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+
+for (let i=0; i<ninjaTurtles.length; i++) {
+    let turtle = ninjaTurtles[i].toLowerCase().split('')
+    for (let j=0; j<turtle.length -1; j+=2) turtle[j] = turtle[j].toUpperCase()  
+    console.log(turtle.join(''))
+}
+
+//****************************************************************************************************************************************************************************************
+
+
+
 // ## Return of the Closets
 
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
