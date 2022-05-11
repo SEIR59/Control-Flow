@@ -230,7 +230,7 @@ for (let i=1; i<=argument; i++){
 // 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
 
 let rightIsoscelesArr = []
-while (rightIsoscelesArr.length < argument) rightIsoscelesArr.push('')
+while (rightIsoscelesArr.length < argument) rightIsoscelesArr.push(' ')
 
 for (let i = argument - 1; i>=0; i--){
     rightIsoscelesArr[i] = '#'
@@ -280,7 +280,7 @@ while (upsideDownRightTriangleArr.length < argument) upsideDownRightTriangleArr.
 
 for (let i=0; i<argument; i++) {
     console.log(upsideDownRightTriangleArr.join(' '))
-    upsideDownRightTriangleArr[i] = ''
+    upsideDownRightTriangleArr[i] = ' '
 }
 // ```
 // #######
