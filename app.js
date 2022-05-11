@@ -19,4 +19,21 @@ for (let c = 0; c < catArray.length; c++){
         console.log("Love me, pet me! HSSSSSS!")
     }
    }
-//its random every time i run it, but its not random every time it runs the loop
+//its random every time i run it the code, but its not random every time it runs the loop.
+
+// 4. Fizz Buzz
+
+for (let f = 1; f <= 100; f+=1)
+    
+    if(f % 15 ===0){
+    console.log("FizzBuzz")
+    }
+   else if(f % 3 ===0){
+       console.log("Fizz")
+   }
+   else if(f % 5 ===0){
+       console.log("Buzz")
+   }
+   else {
+       console.log(f)
+   }
