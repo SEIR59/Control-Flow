@@ -184,7 +184,7 @@ let sum = answerArr.reduce((a,b) => a+b)
 
 // 0. declare a variable `argument` and set it equal to 7.
 
-let argument = 7;
+let argument = 10;
 
 // 1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
 
@@ -200,10 +200,10 @@ let argument = 7;
 // #######
 // ```
 
-let str = '#';
+let str = '# ';
 for (let i=1; i<=argument; i++){
     console.log(str)
-    str += '#'
+    str += '# '
 }
 
 // 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
@@ -213,7 +213,7 @@ while (rightIsoscelesArr.length < argument) rightIsoscelesArr.push('')
 
 for (let i = argument - 1; i>=0; i--){
     rightIsoscelesArr[i] = '#'
-    console.log(rightIsoscelesArr)
+    console.log(rightIsoscelesArr.join(' '))
 }
 
 
@@ -232,6 +232,14 @@ for (let i = argument - 1; i>=0; i--){
 
 // >Ex: `argument` is 7
 
+let upsideDownLeftTriangleArr = []
+while (upsideDownLeftTriangleArr.length < argument) upsideDownLeftTriangleArr.push('#')
+
+for (let i=0; i<argument; i++) {
+    console.log(upsideDownLeftTriangleArr.join(' '))
+    upsideDownLeftTriangleArr.pop()
+}
+
 // ```
 // #######
 // ######
@@ -246,6 +254,13 @@ for (let i = argument - 1; i>=0; i--){
 
 // >Ex: `argument` is 7
 
+let upsideDownRightTriangleArr = []
+while (upsideDownRightTriangleArr.length < argument) upsideDownRightTriangleArr.push('#')
+
+for (let i=0; i<argument; i++) {
+    console.log(upsideDownRightTriangleArr.join(' '))
+    upsideDownRightTriangleArr[i] = ''
+}
 // ```
 // #######
 //  ######
@@ -258,8 +273,5 @@ for (let i = argument - 1; i>=0; i--){
 
 // 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
 
-// <hr>
-// &#x1F534; The commit message should read: <br>
-// "Commit 10 - Triangles answered"
-// <hr>
+// ^^^^ Cool!! TRIANGLES!!
 
