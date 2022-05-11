@@ -153,3 +153,47 @@ for (let i = 0; i < 1000;i++){
   }
 } 
 console.log(solution);
+
+//Hungry for more?
+//triangles
+
+let argument = 69; //this makes the best triangles, despite being designed for two sides :wink:+:finger gun:+:confident mouth click noise:
+//left iso
+for (let i = 0; i < argument;i++){
+  let base = ''
+  for (let j = -1; j < i ; j++){
+    base+='#';
+  }
+  console.log(base)
+}
+//right iso
+for (let i = 0; i < argument;i++){
+  let base = '';
+  for (let k = 1 ; k < argument-i ; k++){
+    base+=' ';
+  }
+  for (let j = 0; j <= i ; j++){
+    base+='#';
+  }
+  console.log(base)
+}
+//upside down left iso
+for (let i = 0; i < argument;i++){
+  base='';
+  for (let j = 0; j < argument-i; j++){
+    base += '#';
+  }
+  console.log(base);
+}
+
+//upside down right iso
+for (let i = 0; i < argument;i++){
+  base='';
+  for (let k = 0 ; k < i ; k++){
+    base +=' ';
+  }
+  for (let j = 0; j < argument-i; j++){
+    base += '#';
+  }
+  console.log(base);
+}
