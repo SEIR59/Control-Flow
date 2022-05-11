@@ -175,15 +175,91 @@ for (let i=1; i<1000; i++){
     if (i % 3 === 0 || i % 5 === 0) answerArr.push(i)
 }
 let sum = answerArr.reduce((a,b) => a+b)
-console.log(sum)
 
-// :clap: You just solved [Project Euler](https://projecteuler.net/problem=1) problem 1! :clap:
+//****************************************************************************************************************************************************************************************
 
-// >Tip: Get used to thinking about how to solve problems _now_. Will help immensely with coding challenges, and get your coding brain muscles nice and flexed for the class. Make a habit of going to Project Euler and taking a crack at the problems
+// # Hungry for more?
+
+// ## Triangles
+
+// 0. declare a variable `argument` and set it equal to 7.
+
+let argument = 7;
+
+// 1. Write a loop that console logs a "left isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.
+
+// >Ex: `argument` is 7
+
+// ```
+// #
+// ##
+// ###
+// ####
+// #####
+// ######
+// #######
+// ```
+
+let str = '#';
+for (let i=1; i<=argument; i++){
+    console.log(str)
+    str += '#'
+}
+
+// 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
+
+let rightIsoscelesArr = []
+while (rightIsoscelesArr.length < argument) rightIsoscelesArr.push('')
+
+for (let i = argument - 1; i>=0; i--){
+    rightIsoscelesArr[i] = '#'
+    console.log(rightIsoscelesArr)
+}
+
+
+// ```
+//       #
+//      ##
+//     ###
+//    ####
+//   #####
+//  ######
+// #######
+// ```
+
+
+// 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
+
+// >Ex: `argument` is 7
+
+// ```
+// #######
+// ######
+// #####
+// ####
+// ###
+// ##
+// #
+// ```
+
+// 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
+
+// >Ex: `argument` is 7
+
+// ```
+// #######
+//  ######
+//   #####
+//    ####
+//     ###
+//      ##
+//       #
+// ```
+
+// 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
 
 // <hr>
 // &#x1F534; The commit message should read: <br>
-// "Commit 9 - Project Euler Problem 1 answered"
+// "Commit 10 - Triangles answered"
 // <hr>
 
-// ---
