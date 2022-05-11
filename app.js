@@ -152,3 +152,16 @@ let kristynsOutfit = `Kristyn is wearing ${kristynsCloset[Math.floor(Math.random
 
 let ThomsOutfit = `Thom is wearing ${thomsCloset[0][Math.floor(Math.random() * thomsCloset[0].length)]}, a ${thomsCloset[1][Math.floor(Math.random() * thomsCloset[1].length)]}, and ${thomsCloset[2][Math.floor(Math.random() * thomsCloset[2].length)]}`;
 
+
+
+// ### Dirty Laundry
+// Continue looking at the closet arrays:
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+kristynsCloset.forEach((item) => {
+    console.log(`WHIRR: Now washing ${item}`);
+})
+// ### Inventory
+// 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+thomsCloset.forEach((closet) => {
+    console.log(closet);
+})
