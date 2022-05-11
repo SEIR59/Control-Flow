@@ -27,13 +27,13 @@ Language: JavaScript <br>
 
 * Remember: the "Bonus" questions and the "Hungry for More" questions don't count against you, they're just extra questions if you wanna push beyond the baseline.
 
-## Easy Going
+<!-- ## Easy Going
 1. Write a for loop that will log the numbers 1 through 20.
 
 <hr>
 &#x1F534; The commit message should read: <br>
 "Commit 1 - Easy Going answered"
-<hr>
+<hr> -->
 
 ## Get Even
 1. Write a `for` loop that will log only the even numbers in 0 through 200.
