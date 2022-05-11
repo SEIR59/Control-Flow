@@ -70,3 +70,66 @@ for( let i = 0;i< nTurtles.length;i++){
   }
   console.log(solution)
   }
+
+  // Return of the closets
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  let kristynsShoe = kristynsCloset.shift();
+  thomsCloset[2].push(kristynsShoe);
+  
+  //This function looks at the data structure of the first element. If it's not an array, it moves to "simple" and we pick 3 unique items. If it is an array, we pick one item from each array, currently not capped at 3, could be any number depending on number of subclosets.
+  let randomOutfit = function(closet){
+    outfit =[]
+    if(Array.isArray(closet[0]) == false){
+      //console.log('Simple Closet');
+      tempcloset = closet;
+      for (let i = 0; i<3 ; i++){
+        let item = tempcloset.splice(Math.floor(Math.random()*tempcloset.length) , 1);
+        outfit.push(item[0]);
+      }
+    }else{
+      //console.log('Complicate closet')
+      for (let i = 0 ; i < closet.length ; i++){
+        tempcloset = closet[i];
+        let item = tempcloset.splice(Math.floor(Math.random()*tempcloset.length) , 1);
+        outfit.push(item[0]);
+      }
+    }
+    return outfit;
+  }
+  //randomOutfit is called and returns a list of items.
+  //console.log(randomOutfit(kristynsCloset));
+  //Setup outfit array to use.
+  let kOutfit = randomOutfit(kristynsCloset);
+  console.log(`Kristyn is wearing her ${kOutfit[0]}, the ${kOutfit[1]}, and her signature ${kOutfit[2]}.`);
+  
+  let tOutfit = randomOutfit(thomsCloset);
+  console.log(`Thom is wearing his ${tOutfit[0]}, the ${tOutfit[1]}, and some ugly, overly large ${tOutfit[2]}.`);
