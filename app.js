@@ -88,3 +88,13 @@ let kristynsShoe = kristynsCloset.splice(0, 1);
 thomsCloset[2].push(kristynsShoe);
 
 console.log(`Kristyn is wearing ${kristynsCloset[2]}, a ${kristynsCloset[4]}, and ${kristynsCloset[5]}`);
+
+for (let m = 0; m < kristynsCloset.length; m++) {
+    let currentItem = kristynsCloset[m];
+    console.log(`WHIRR: Now washing ${currentItem}`);
+}
+
+let thomsShirts = thomsCloset[0];
+let thomsPants = thomsCloset[1];
+let thomsAccessories = thomsCloset[2];
+
