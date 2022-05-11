@@ -98,3 +98,11 @@ let thomsShirts = thomsCloset[0];
 let thomsPants = thomsCloset[1];
 let thomsAccessories = thomsCloset[2];
 
+
+let multipleSum = 0;
+
+for (let o = 0; o <= 1000; o++){
+   if (o % 3 === 0 || o % 5 === 0) multipleSum += o;
+}
+
+console.log(multipleSum);
