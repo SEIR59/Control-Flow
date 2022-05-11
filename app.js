@@ -45,10 +45,46 @@ jimHaff.push("New York City", "San Francisco", "Guangzhou");
 
 let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for (let n = 0; n < ninjaTurtles.length; n++ ){
+for (let n = 0; n < ninjaTurtles.length; n++) {
     let currentTurtle = ninjaTurtles[i];
 
     currentTurtle.toUpperCase();
 }
 
 console.log(ninjaTurtles);
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+let kristynsShoe = kristynsCloset.splice(0, 1);
+thomsCloset[2].push(kristynsShoe);
+
+console.log(`Kristyn is wearing ${kristynsCloset[2]}, a ${kristynsCloset[4]}, and ${kristynsCloset[5]}`);
