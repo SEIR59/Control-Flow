@@ -9,6 +9,7 @@
 // }
 
 // question 3
+
 let even = [
   "...human...why you taking pictures of me?...",
   "...the catnip made me do it...",
@@ -23,4 +24,13 @@ for (let i = 1; i < 21; i++) {
   if (i % 2 === 0) {
     console.log(even[Math.floor(Math.random() * even.length)]);
   }
-}
+} 
+
+
+// queston 4
+
+
+
+
+
+
