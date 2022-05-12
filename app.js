@@ -149,3 +149,9 @@ const kristynsCloset = [
 
     let todaysOutfit = `Thom is wearing a ${firstItem}, some ${secondItem} and a ${thirdItem}.`; 
     console.log(todaysOutfit);
+
+    // Dirty Laundry
+    let numItems = kristynsCloset.length
+    for (let i = 0; i < numItems; i++) {
+        console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+    }
