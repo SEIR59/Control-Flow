@@ -83,3 +83,12 @@ thomsCloset[2].push(kristynsShoe)
 
 console.log("Kristyn is wearing " + kristynsCloset[0] + ", a " + kristynsCloset[1] + ", and a " + kristynsCloset[2])
 console.log("Thom is wearing a " + thomsCloset[0][0] + ", "+ thomsCloset[1][1] + ", and " + thomsCloset[2][2])
+
+//question 8
+for (let i = 0; i < kristynsCloset.length; i++){
+    console.log("WHIRR: Now washing " + kristynsCloset[i])
+  }
+
+  for (let j = 0; j < thomsCloset.length; j++){
+    console.log(thomsCloset[j])
+  }
