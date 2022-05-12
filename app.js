@@ -10,7 +10,7 @@ for (let i = 0; i < 201; i += 2) {
     console.log(i);
 }
 
-// 3. 
+// 3. NEED HELP ON PART 2
 console.log("EXCITED KITTEN")
 for (let i = 1; i <= 20; i++) {
    console.log("Love me, pet me! HSSSSSS!");
@@ -19,9 +19,10 @@ for (let i = 1; i <= 20; i++) {
 console.log("EXCITED KITTEN 2")
 let kittyWhy = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 let even = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+let randomNumber = 9
 let form = Math.floor(Math.random() * 4);
 for (let i = 1; i <= 20; i++) {
-    if (even[i] = even) {
+    if (even[i] === randomNumber) {
         console.log(form)
     }
     else console.log("Love me, pet me! HSSSSSS!")
@@ -78,3 +79,25 @@ for ( i = 0; i < ninjaTurtles.length; i++) {
     bigLetters[i] = ninjaTurtles[i].toUpperCase();
 }
 console.log(bigLetters);
+
+// 7.
+console.log("RETURN OF THE CLOSETS")
+const kristynsCloset = ["left shoe", "cowboy boots", "right sock", "GA hoodie", "green pants", "yellow knit hat", "marshmallow peeps"];
+
+const thomsCloset = [
+    // These are Thom's shirts
+["grey button-up", "dark grey button-up",
+"light blue button-up", "blue button-up",],
+    // These are Thom's pants
+["grey jeans", "jeans", "PJs"],
+    // Thom's accessories
+["wool mittens", "wool scarf", "raybans"]
+  ]; 
+
+kristynsCloset.shift()
+console.log(kristynsCloset)
+let kristynsShoe = "left shoe"
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset[2])
+console.log("Kristyn is wearing " + kristynsCloset[3] + ", a " + kristynsCloset[1] + ", and " +  kristynsCloset[5] + ".")
+console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][2] + ".")
