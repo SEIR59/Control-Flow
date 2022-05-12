@@ -19,9 +19,10 @@ for (let i = 1; i <= 20; i++) {
 console.log("EXCITED KITTEN 2")
 let kittyWhy = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 let even = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+let form = Math.floor(Math.random() * 4);
 for (let i = 1; i <= 20; i++) {
     if (even[i] = even) {
-        console.log(kittyWhy)
+        console.log(form)
     }
     else console.log("Love me, pet me! HSSSSSS!")
  }
@@ -68,3 +69,12 @@ jimHaff.pop();
 jimHaff.push("NYC", "LA", "Miami");
 jimHaff.splice(2, 1);
 console.log(jimHaff);
+
+// 6. 
+console.log("YELL AT THE NINJA TURTLES")
+let ninjaTurtles = ["donatello", "Leonardo", "Raphael", "Michaelangelo"];
+let bigLetters = [];
+for ( i = 0; i < ninjaTurtles.length; i++) {
+    bigLetters[i] = ninjaTurtles[i].toUpperCase();
+}
+console.log(bigLetters);
