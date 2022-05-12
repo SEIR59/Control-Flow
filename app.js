@@ -80,3 +80,47 @@ for(i = 0; i < ninjaTurtle.length; i++) {
 console.log(ninjaTurtle);
 //Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 //Dont quite clear about the requirement
+
+//#####Return of the Closets######//
+//Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  //Alien Attire. Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+  const kristynsShoe = kristynsCloset[0];
+  kristynsCloset.shift();
+  thomsCloset[2].push(kristynsShoe);
+  //Dress 'em Up. Let's create some outfits for both Kristyn and Thom. Select 3 elements from kristynsCloset and inject them into a sentence that reads, for example, "Kristyn is wearing green pants, a right sock, and marshmallow peeps" so that "green pants", "right sock", and "marshmallow peeps" are dynamically injected into the string. Do the same thing for Thom using thomsCloset. (Here's a suggestion that's not required: If you really want to challenge yourself, see if you can make the selections randomly from each of their arrays.)
+  const aboutKristyn = "Kristyn is wearing " + kristynsCloset[3] + ", a " + kristynsCloset[1] + ", and " + kristynsCloset[5] + ".";
+  const aboutThom = "Thom is wearing " + thomsCloset[0][1] + " shirt, a " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".";
+  
+  console.log(aboutKristyn);
+  console.log(thomsCloset[2][0]);
+  console.log(aboutThom);
