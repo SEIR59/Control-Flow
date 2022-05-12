@@ -141,3 +141,13 @@ const thomsAccessories = ["wool mittens",
 const thomsWholeCloset = ["thomsShirts", "thomsPants", "thomsAccessories"]
   console.log(thomsWholeCloset)
 
+// 9. Multiples of 3 and 5
+
+var sum =0;
+for(var e = 0; e <= 1000; e++) {
+if(e %3===0 || e % 5 ===0){
+    sum += e;
+}
+}
+    console.log(sum)
+
