@@ -20,7 +20,7 @@
     //}
 //}
 
-4. fizz buzz
+4. Fizz buzz
 for (i = 1; i <= 100; i++){
     if(i % 3 === 0) {
         console.log("Fizz")
