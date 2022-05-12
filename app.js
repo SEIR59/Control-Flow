@@ -27,7 +27,7 @@ const random = Math.floor(Math.random() * myArr.length);
     if (i %2 === 0) {
         console.log(myArr[random])}
     }
-*/
+
 
 // Fizz Buzz
 
@@ -41,3 +41,34 @@ for (let i = 0; i < 100; i++) {
         console.log("Buzz")
     } 
     }
+*/
+// Getting to Know You
+
+//#1
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+
+kenny.shift();
+kenny.unshift("Gameboy");
+console.log(kenny);
+//#2
+jimClark.splice(1, 1, "187");
+console.log(jimClark);
+//#3
+ryan.splice(2, 1, "Gotham City");
+console.log(ryan);
+//#4
+reuben.pop();
+reuben.push("Chicago");
+console.log(reuben);
+//#5
+jimHaff.splice(2, 1, "Dallas", "San Antonio", "El Paso");
+console.log(jimHaff);
+//#6
+jimHaff.splice(2, 1);
+console.log(jimHaff);
+
