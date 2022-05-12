@@ -146,5 +146,14 @@ console.log(`Thom is wearing ${thomsCloset[0][lk]}, ${thomsCloset[0][lk]}, and $
 
 
 
+//"Commit 8 - I loops through their closets".
 
+//1 Dirty Laundry
+for(let i =0; i<kristynsCloset.length; i++){
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+  }
+//2  Inventory
+for(let i =0; i<thomsCloset.length; i++){
+    console.log(thomsCloset[i]);
+  }
 
