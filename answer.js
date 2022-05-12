@@ -91,4 +91,60 @@ for(let i=0;i<members.length;i++){
     p=p.join('');
     console.log(p); 
     }
+   
     
+
+
+//"Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  //1 Alien Attire
+let kristynsShoe = kristynsCloset[0];
+kristynsCloset.splice(0,1);
+thomsCloset[2].push(kristynsShoe);
+
+//2 Dress 'em Up
+let rrr =[]
+while (rrr.length < 3){
+  let n = Math.floor(Math.random()*kristynsCloset.length);
+  if(rrr.indexOf(n) === -1) {
+    rrr.push(n);
+    }
+}
+console.log(`Kristyn is wearing ${kristynsCloset[rrr[0]]}, ${kristynsCloset[rrr[1]]}, and ${kristynsCloset[rrr[2]]}!!!`);
+
+let lk = Math.floor(Math.random()*3);
+
+console.log(`Thom is wearing ${thomsCloset[0][lk]}, ${thomsCloset[0][lk]}, and ${thomsCloset[0][lk]}!!!`);
+
+
+
+
+
