@@ -131,3 +131,22 @@ for (let i = 1; i < 1000; i++) {
   }
 }
 console.log("the **sum** of all the multiples of 3 or 5 below 1000:" + sum);
+
+/** Hungry for more? */
+/** Triangles */
+let argument = 7;
+for (let i = 1; i <= argument; i++) {
+  console.log("#".repeat(i));
+}
+
+for (let i = 1; i <= argument; i++) {
+  console.log(" ".repeat(argument - i) + "#".repeat(i));
+}
+
+for (let i = argument; i > 0; i--) {
+  console.log("#".repeat(i));
+}
+
+for (let i = argument; i > 0; i--) {
+  console.log(" ".repeat(argument - i) + "#".repeat(i));
+}
