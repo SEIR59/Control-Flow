@@ -82,3 +82,45 @@ const ninjaTurtles= ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 for (let t = 0; t < ninjaTurtles.length; t++){
     console.log(ninjaTurtles[t].toUpperCase());
 }
+
+// 7. Return of the Closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+
+const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+kristynsCloset.shift()
+var kristynsShoe = ["left shoe"]
+thomsCloset.splice(2, 0, kristynsShoe);
+console.log(kristynsCloset);
+console.log(thomsCloset);
+
+// not sure how to manipulate an array nested within an array
+
+
