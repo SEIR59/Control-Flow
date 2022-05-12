@@ -50,3 +50,9 @@ jimHaff.push("LA", "NY", "San Fancisco");
 console.log(jimHaff);
 jimHaff.splice(2, 1);
 console.log(jimHaff);
+//6
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+    for(let i = 0; i < ninjaTurtles.length; i++) {
+    const turtlNew = ninjaTurtles[i];
+    console.log(turtlNew.toUpperCase())
+    }
