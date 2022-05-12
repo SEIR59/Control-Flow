@@ -76,3 +76,38 @@ for (let i = 0; i < ninja.length; i++) {
 ///bonus??
 
 /** Return of the closest */
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps",
+];
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],
+  [
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+  ],
+  [
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+  ],
+];
+const kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+
+const kristynsOutfits = `Kristyn is wearing ${kristynsCloset[3]}, ${kristynsCloset[1]}, and ${kristynsCloset[5]}.`;
+const thomOutfits = `Thom is wearing ${thomsCloset[0][3]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}.`;
