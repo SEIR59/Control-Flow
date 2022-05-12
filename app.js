@@ -163,9 +163,7 @@ for (let i = 0; i < kristynsCloset.length; i++) {
 
 // ### Inventory
 // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-for (let i = 0; i < thomsCloset.length; i++) {
-  console.log(thomsCloset[i]);
-}
+console.log(thomsCloset[0] + ", " + thomsCloset[1] + "," + thomsCloset[2]);
 
 // ## Multiples of 3 and 5
 let sum = 0;
