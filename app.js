@@ -280,6 +280,20 @@ The commit message should read:
 "Commit 8 - I loops through their closets".
 */
 
+//1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+}
+
+
+//2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+
+for (let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+}
+
+
+
 /* Multiples of 3 and 5
 
 _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
