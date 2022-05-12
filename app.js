@@ -79,3 +79,14 @@ reuben.push("Chicago")
 // 5. Jim Haff could be literally anywhere in the world. Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine, but see if you can do it in one line of code
 const newJimHaff = jimHaff.replace("All cities", ["New York", "Singapore", "Cumberland"]);
 // 6. passed on Bonus because of time constraints (t-Minus 8 minutes to start of class)
+
+
+// YELL AT THE NINJA TURTLES
+// 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// 2. Use a for loop to call .toUpperCase() on each of them and print out the result.
+for (let i = 0; i < 5; i++) {
+    console.log()
+}
+
+unfinished assignment =0(!!!!!!!
