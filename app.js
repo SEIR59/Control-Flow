@@ -219,23 +219,34 @@ let argument = 10;
 // #####
 // ######
 // #######
-// ```
 
-let str = '# ';
-for (let i=1; i<=argument; i++){
-    console.log(str)
+
+// ```
+//instead of logging to console this function appends the text to the body
+
+const makeLeftIsosceles = () => {
+  let str = '# '
+  for (let i=1; i<=argument; i++){
+    const bodyParagraph = document.createElement('p')
+    bodyParagraph.innerText = str
+    document.body.appendChild(bodyParagraph)
     str += '# '
+  }
 }
+makeLeftIsosceles()
 
 // 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
 
-let rightIsoscelesArr = []
-while (rightIsoscelesArr.length < argument) rightIsoscelesArr.push(' ')
+const makeRightIsosceles = () => {
+  let rightIsoscelesArr = []
+  while (rightIsoscelesArr.length < argument) rightIsoscelesArr.push(' ')
 
-for (let i = argument - 1; i>=0; i--){
-    rightIsoscelesArr[i] = '#'
-    console.log(rightIsoscelesArr.join(' '))
+  for (let i = argument - 1; i>=0; i--){
+      rightIsoscelesArr[i] = '#'
+      console.log(rightIsoscelesArr.join(' '))
+  }
 }
+makeRightIsosceles()
 
 
 // ```
@@ -252,14 +263,19 @@ for (let i = argument - 1; i>=0; i--){
 // 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
 
 // >Ex: `argument` is 7
+const makeUDLTriangle = () => {
+  let upsideDownLeftTriangleArr = []
+  while (upsideDownLeftTriangleArr.length < argument) 
+      upsideDownLeftTriangleArr.push('#')
 
-let upsideDownLeftTriangleArr = []
-while (upsideDownLeftTriangleArr.length < argument) upsideDownLeftTriangleArr.push('#')
-
-for (let i=0; i<argument; i++) {
-    console.log(upsideDownLeftTriangleArr.join(' '))
-    upsideDownLeftTriangleArr.pop()
+  for (let i=0; i<argument; i++) {
+      const bodyParagraph2 = document.createElement('p')
+      bodyParagraph2.innerText = upsideDownLeftTriangleArr.join(' ')
+      document.body.appendChild(bodyParagraph2)
+      upsideDownLeftTriangleArr.pop()
+  }
 }
+makeUDLTriangle()
 
 // ```
 // #######
@@ -274,14 +290,28 @@ for (let i=0; i<argument; i++) {
 // 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
 
 // >Ex: `argument` is 7
+const makeUDRTriangle = () => {
+    let upsideDownRightTriangleArr = []
+    while (upsideDownRightTriangleArr.length < argument) upsideDownRightTriangleArr.push('#')
 
-let upsideDownRightTriangleArr = []
-while (upsideDownRightTriangleArr.length < argument) upsideDownRightTriangleArr.push('#')
-
-for (let i=0; i<argument; i++) {
-    console.log(upsideDownRightTriangleArr.join(' '))
-    upsideDownRightTriangleArr[i] = ' '
+    for (let i=0; i<argument; i++) {
+        console.log(upsideDownRightTriangleArr.join(' '))
+        upsideDownRightTriangleArr[i] = ' '
+    }
 }
+makeUDRTriangle()
+
+// *********** PARTY MODE (use at your own risk) ***************
+
+const letsParty = () => {
+  for (let i=0; i<=10; i++){
+    argument = Math.floor(Math.random() * 50)
+    makeLeftIsosceles()
+    makeUDLTriangle()
+  }
+}
+letsParty()
+
 // ```
 // #######
 //  ######
