@@ -66,3 +66,14 @@ reuben.splice(2, 1, 'Chicago')
 jimHaff.splice(2, 1, 'Austin','Dallas','Houston')
 // Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now, remove it from the array using .splice()
 console.log(jimHaff)
+
+// Yell at the Ninja Turtles
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+// Use a for loop to call .toUpperCase() on each of them and print out the result.
+
+// Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+let ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+    for (let M = 0; M <= 3 ; M++) {
+        console.log(ninjaTurtles[M].toUpperCase())
+    }
