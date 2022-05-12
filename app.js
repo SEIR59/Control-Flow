@@ -43,8 +43,10 @@ for (let i = 1; i < 101; i++) {
   // console.log();
   //}
 }  */
+
 // question 5
 
+/*
 const kenny = ["Kenny", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
@@ -73,3 +75,20 @@ console.log(jimHaff);
 
 jimHaff.splice(2,2);
 console.log(jimHaff);
+*/
+
+//question 6
+
+const nMembers = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let i = 0; i < nMembers.length; i++) {
+  console.log(nMembers[i].toUpperCase());
+}
+
+for (let i = 0; i < 5; i++) {
+  if (i % 2 === 0) {
+    console.log(nMembers[i].toUpperCase());
+  } else {
+    console.log(nMembers[i].toLowerCase());
+  }
+}
