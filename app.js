@@ -111,3 +111,14 @@ thomsCloset[2].push(kristynsShoe);
 
 const kristynsOutfits = `Kristyn is wearing ${kristynsCloset[3]}, ${kristynsCloset[1]}, and ${kristynsCloset[5]}.`;
 const thomOutfits = `Thom is wearing ${thomsCloset[0][3]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][0]}.`;
+
+/** Dirty Laundry */
+for (let i = 0; i < kristynsCloset.length; i++) {
+  console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+/** Inventory */
+for (index in thomsCloset) {
+  for (ele in thomsCloset[index]) {
+    console.log(thomsCloset[index][ele]);
+  }
+}
