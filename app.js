@@ -31,6 +31,28 @@ for (let i = 0; i < 20; i++) {
         console.log(catComments[i])
     }
 }
-//Moving on from this problem found articles on math.random but unclear on how to work into function
+// Moving on from this problem found articles on math.random but unclear on how to work into function
 // got creative and placed odd numbers in the array at the odd index spaces, all even spaces are strings
 // Found this article on running math.random couldnt wrap mind around articulating w/ JS syntax the strings fromcatComments
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+// Note also used a reference to figure out how to console.log even numbers only here:
+// https://stackoverflow.com/questions/66837818/how-to-print-odd-and-even-numbers-in-javascript
+
+
+// FIZ BUZZ logging all numbers 1-100: A. If divisible by 3 log "Fizz", B. If divisible by 5 log "Buzz", C. if divisbile by both log "FizzBuzz"
+let myString = ["Fizz", "Buzz", "FizzBuzz"];
+for (let i = 0; i < 100; i++) {
+    if (i % 3 === 0) {
+        console.log(myString["#'s divisible by 3"])
+    }
+    else if (i % 5 === 0) {
+        console.log(myString["#'s divisible by 5"])
+    }
+    else if (i % 3 && 5 === 0){
+        console.log(mystring["#'s divisible by 3 && 5, 3, or 5"])
+    }
+}
+// To start, running same script as before but for ODD #'s
+// I know that there is a Else If statement that'll follow the first "if" that should account for the Divisible by 5 indecies
+// I understand the concept but dont know how to articulate it in JS
+// ...moving on
