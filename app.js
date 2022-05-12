@@ -83,3 +83,48 @@ for (let i = 0; i < turtArr.length; i++) {
 }
 // Bonus #3
 */
+
+// Alien Attire
+
+//#1
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  let kristynsShoe = kristynsCloset.shift();
+  console.log(kristynsShoe)
+  thomsCloset[2].push(kristynsShoe);
+  console.log(thomsCloset);
+
+  //Dress 'em Up
+//#2
+
+  console.log(`Kristyn is wearing a ${kristynsCloset[2]}, ${kristynsCloset[3]}, and a ${kristynsCloset[1]}.`);
+  console.log(`Thom is wearing a ${thomsCloset[2][0]}, a ${thomsCloset[0][2]}, and ${thomsCloset[1][0]}.`);
