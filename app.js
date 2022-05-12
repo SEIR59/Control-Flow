@@ -116,6 +116,8 @@ for (let i = 0; i < 3; i++) {
     kristynsOutfit.push(kristynsCloset[nextItem])
     kristynsCloset.splice(1, nextItem)
 }
+console.log("Kristyn is wearing " + kristynsOutfit[0] + ", "
+    + kristynsOutfit[1] + ", and " + kristynsOutfit[2])
 
 const thomsOutfit = []
 for (let i = 0; i < 3; i++) {
@@ -124,9 +126,15 @@ for (let i = 0; i < 3; i++) {
     thomsOutfit.push(currentSection[nextItem])
     thomsCloset[i].splice(1, nextItem)
 }
+console.log("Thom is wearing " + thomsOutfit[0] + ", "
+    + thomsOutfit[1] + ", and " + thomsOutfit[2])
 
 // 8 - I loops through their closets
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log("WHIRR: Now washing " + kristynsCloset[i])
+}
 
+console.log(thomsCloset)
 
 // 9 - Project Euler Problem 1
 
