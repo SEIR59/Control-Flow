@@ -143,9 +143,10 @@ const kristynsCloset = [
   console.log("Thom is wearing " + thomsCloset[yo][ao] + ", a " + thomsCloset[xo][bo] + " and " + thomsCloset[zo][co]);
   
   */
- 
+
 //question 8
 
+/*
 for(let i =0;i<kristynsCloset.length;i++){
     console.log( "Now washing "+ kristynsCloset[i]);
   }
@@ -153,4 +154,15 @@ for(let i =0;i<kristynsCloset.length;i++){
   console.log(thomsCloset);
   
   
+*/
 
+// question 9
+let value = 0;
+ let i;
+ for(i= 1;i<1000;i++){
+   if(i%3===0 || i%5===0){
+ value=value+i;
+   }
+}
+
+console.log(value);
