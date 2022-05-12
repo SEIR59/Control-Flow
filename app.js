@@ -159,3 +159,9 @@ for(argument=1; argument<=7; argument++)
     if(argument <=7 +1)
         console.log("#")
     
+// Find the Median
+
+var nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+    nums.sort();
+    console.log(nums);
+    console.log(nums[12])
