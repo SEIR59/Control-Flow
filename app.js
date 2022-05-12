@@ -1,12 +1,12 @@
 /*Easy Going
 
-#1
+//#1
 
 for (let i = 1; i < 21; i++) {
     console.log(i);
 }
 
-Get Even
+// Get Even
 
 #1
 
@@ -41,7 +41,7 @@ for (let i = 0; i < 100; i++) {
         console.log("Buzz")
     } 
     }
-*/
+
 // Getting to Know You
 
 //#1
@@ -72,3 +72,14 @@ console.log(jimHaff);
 jimHaff.splice(2, 1);
 console.log(jimHaff);
 
+
+//Yell at the Ninja Turtles
+// #1
+const turtArr = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// #2
+for (let i = 0; i < turtArr.length; i++) {
+    console.log(turtArr[i].toUpperCase());
+}
+// Bonus #3
+*/
