@@ -50,15 +50,15 @@
     // console.log(ninjaTurtles[1].toUpperCase)
 // }
 
-const kristynsCloset = [
-   "left shoe",
-    "cowboy boots",
-   "right sock",
-     "GA hoodie",
-   "green pants",
-     "yellow knit hat",
-    "marshmallow peeps"
-   ];
+// const kristynsCloset = [
+//    "left shoe",
+//     "cowboy boots",
+//    "right sock",
+//      "GA hoodie",
+//    "green pants",
+//      "yellow knit hat",
+//     "marshmallow peeps"
+//    ];
   
   // // Thom's closet is more complicated. Check out this nested data structure!!
   // // const thomsCloset = [
@@ -90,6 +90,15 @@ const kristynsCloset = [
 // console.log(`kristyn is wearing a ${kristynsCloset[0]}, ${kristynsCloset[1]}, and a ${kristynsCloset[2]}`)
 
 
-console. log ("WHIRR: Now washing " + kristynsCloset[Math.floor (Math.random
-  ())*kristynsCloset.length])
+// console. log ("WHIRR: Now washing " + kristynsCloset[Math.floor (Math.random
+  // ())*kristynsCloset.length])
+
+  let multi = []
+  for (i = 0; i <= 1000; i++){
+    if (i%3 === 0 || i&5 === 0){
+      multi.push(i);
+    }
+  }
+
+  console.log(multi);
 
