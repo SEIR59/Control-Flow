@@ -68,3 +68,27 @@ jimHaff.push("New York","Seoul","Tokyo");
 jimHaff.splice(2,1);
 
 
+//"Commit 6 - Yell at the Ninja Turtles answered"
+//1
+const members = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+//2
+for(let i=0;i<members.length;i++){
+  console.log(members[i].toUpperCase());
+}
+//3
+for(let i=0;i<members.length;i++){
+
+    let p = members[i].split('');
+    
+    for(let a=0; a< p.length;a++){
+        if(a%2 === 0){
+          p[a]= p[a].toUpperCase()
+        }
+        else{
+          p[a]= p[a].toLowerCase()
+        } 
+      }
+    p=p.join('');
+    console.log(p); 
+    }
+    
