@@ -140,6 +140,14 @@ const kristynsCloset = [
 // 1. Let's create some outfits for both Kristyn and Thom.
 //  Select 3 elements from `kristynsCloset` and inject them into a sentence that reads, for example, "Kristyn is wearing green pants, a right sock, and marshmallow peeps" so that "green pants", "right sock", and "marshmallow peeps" are dynamically injected into the string. 
 // Do the same thing for Thom using `thomsCloset`. (Here's a suggestion that's not required: If you really want to challenge yourself, see if you can make the selections randomly from each of their arrays.)
-console.log(`Kristyn is wearing ${kristynsCloset[4]} , a ${kristynsCloset[3]}, and a ${kristynsCloset[5]}.`);
+// console.log(`Kristyn is wearing ${kristynsCloset[4]} , a ${kristynsCloset[3]}, and a ${kristynsCloset[5]}.`);
 
-console.log(`Thom is wearing a ${thomsCloset[0][2]} , ${thomsCloset[1][1]} and ${thomsCloset[2][2]}`);
+// console.log(`Thom is wearing a ${thomsCloset[0][2]} , ${thomsCloset[1][1]} and ${thomsCloset[2][2]}`);
+
+// ### Dirty Laundry
+// Continue looking at the closet arrays:
+// 1. Time to do laundry - loop through Kristyn's closet and log the sentence 
+// "WHIRR: Now washing (item)" for each item in the array.
+for (let i=0; i < kristynsCloset.length; i++){
+    console.log(`Whirr: Now washing ${kristynsCloset[i]}`);
+}
