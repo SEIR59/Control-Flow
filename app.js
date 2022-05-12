@@ -101,3 +101,15 @@ thomsCloset[2].push(kristynsShoe);
 console.log(thomsCloset[2])
 console.log("Kristyn is wearing " + kristynsCloset[3] + ", a " + kristynsCloset[1] + ", and " +  kristynsCloset[5] + ".")
 console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + ", and " + thomsCloset[2][2] + ".")
+
+// 8.
+console.log("DIRTY LAUNDRY AND INVENTORY")
+for (let i = 0; i < 7; i++) {
+    console.log("WHIRR: Now Washing " + kristynsCloset[i]);
+}
+
+thomsCloset[0] = "Shirts"
+thomsCloset[1] = "Pants"
+thomsCloset[2] = "Accessories"
+
+console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2])
