@@ -95,7 +95,7 @@ for (let i = 0; i < 5; i++) {
 */
 
 // question 7
-
+/*
 const kristynsCloset = [
     "left shoe",
     "cowboy boots",
@@ -142,6 +142,14 @@ const kristynsCloset = [
   let co = Math.floor(Math.random() * thomsCloset[yo].length);
   console.log("Thom is wearing " + thomsCloset[yo][ao] + ", a " + thomsCloset[xo][bo] + " and " + thomsCloset[zo][co]);
   
-  
+  */
+//folowup
 
+for(let i =0;i<kristynsCloset.length;i++){
+    console.log( "Now washing "+ kristynsCloset[i]);
+  }
+  
+  console.log(thomsCloset);
+  
+  
 
