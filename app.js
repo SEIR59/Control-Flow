@@ -75,6 +75,55 @@ for (let i = 0; i < arr.length; i++) {
 
 // 7 - Kristyn and Thom have their outfits ready for class
 
+// Kristyn's closet
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+];
+
+const kristynsShoe = kristynsCloset.shift()
+thomsCloset[2].unshift(kristynsShoe)
+
+const kristynsOutfit = []
+for (let i = 0; i < 3; i++) {
+    const nextItem = Math.floor(Math.random() * kristynsCloset.length)
+    kristynsOutfit.push(kristynsCloset[nextItem])
+    kristynsCloset.splice(1, nextItem)
+}
+
+const thomsOutfit = []
+for (let i = 0; i < 3; i++) {
+    const currentSection = thomsCloset[i]
+    const nextItem = Math.floor(Math.random() * currentSection.length)
+    thomsOutfit.push(currentSection[nextItem])
+    thomsCloset[i].splice(1, nextItem)
+}
 
 // 8 - I loops through their closets
 
