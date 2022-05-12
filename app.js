@@ -20,5 +20,19 @@ while(a < 20){
         console.log(catSpeaks[randomText]);
     }
     a++;
+}
 
+//Fizz Buzz
+let b = 1;
+while(b <= 100){
+    if(b % 3 == 0 && b % 5 == 0){
+        console.log("FizzBuzz");
+    }else if(b % 3 == 0){
+        console.log("Fizz");
+    }else if(b % 5 == 0){
+        console.log("Buzz");
+    }else{
+    console.log(b);
+    }
+    b++;
 }
