@@ -7,14 +7,13 @@ let i = 0;
 
 
 //2. Get even 
-for(let i = 0; i <= 200; i += 2){
-    console.log(i)
-}
+//for(let i = 0; i <= 200; i += 2){
+ //   console.log(i)
+//}
 
 
 
 //3. Excited Kitted
-//for(i = 0; i < 20; i++) {
-  //  console.log("Love me, pet me! HSSSSSS!" )
-//}
-//console.log(i)
+for(i = 0; i < 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!" )
+}
