@@ -67,3 +67,12 @@ jimHaff.push("NYC", "Hong Kong", "DC");
 console.log(jimHaff);
 jimHaff.splice(2, 1);
 console.log(jimHaff);
+
+/** Yell at the Ninja Turtles */
+const ninja = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let i = 0; i < ninja.length; i++) {
+  console.log(ninja[i].toUpperCase());
+}
+///bonus??
+
+/** Return of the closest */
