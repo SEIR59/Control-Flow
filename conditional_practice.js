@@ -60,7 +60,7 @@ console.log(people);
 let nTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 for( let i = 0;i< nTurtles.length;i++){
   let turtle = nTurtles[i];
-  solution = '';
+  let solution = '';
   for (let j = 0 ; j < turtle.length ; j++){
     if ((j+1)%2){
       solution += turtle[j].toUpperCase();
@@ -138,7 +138,7 @@ const kristynsCloset = [
 for (let i = 0 ; i < kristynsCloset.length;i++){
     console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
   }
-  //logging specifically the entire arrays, not each element within each array.
+  //logging specifically the entire arrays, not each element within each array and does not include items that Thom is wearing for his outfit.
   for (let i = 0 ; i < thomsCloset.length;i++){
     console.log(thomsCloset[i]);
   }
@@ -157,7 +157,7 @@ console.log(solution);
 //Hungry for more?
 //triangles
 
-let argument = 69; //this makes the best triangles, despite being designed for two sides :wink:+:finger gun:+:confident mouth click noise:
+let argument = 30; 
 //left iso
 for (let i = 0; i < argument;i++){
   let base = ''
