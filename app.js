@@ -190,3 +190,47 @@ for (let i = 0; i < 1000; i++) {
         total += i;
     }
 }
+
+// Hungry for more?
+// Triangles 1
+const argument = 7;
+let currentLine = "";
+for (let i = 0; i < argument; i++) {
+    currentLine = currentLine.concat("#") 
+    console.log(currentLine);
+}
+
+// Triangles 2
+const argument = 7;
+let currentLine = "";
+for (let i = 0; i < argument; i++) {
+    let extraSpace = "";
+    for (let j = i + 1; j < argument; j++) {
+        extraSpace = extraSpace.concat(" ");
+    }
+    currentLine = currentLine.concat("#") 
+    console.log(extraSpace + currentLine);
+}
+
+// Triangles 3
+let currentLine;
+const argument = 7;
+for (let i = 0; i < argument; i++) {
+    currentLine = ""
+    for (let j = i; j < argument; j++) {
+        currentLine = currentLine.concat("#");
+    }
+    console.log(currentLine);
+}
+
+// Triangles 4
+const argument = 7;
+let extraSpace = "";
+for (let i = 0; i < argument; i++) {
+    let currentLine = "";
+    for (let j = i; j < argument; j++) {
+        currentLine = currentLine.concat("#") 
+    }
+    extraSpace = extraSpace.concat(" ");
+    console.log(extraSpace + currentLine);
+}
