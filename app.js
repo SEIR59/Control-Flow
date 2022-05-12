@@ -82,7 +82,7 @@ for (let i = 0; i < turtArr.length; i++) {
     console.log(turtArr[i].toUpperCase());
 }
 // Bonus #3
-*/
+
 
 // Alien Attire
 
@@ -128,3 +128,17 @@ const kristynsCloset = [
 
   console.log(`Kristyn is wearing a ${kristynsCloset[2]}, ${kristynsCloset[3]}, and a ${kristynsCloset[1]}.`);
   console.log(`Thom is wearing a ${thomsCloset[2][0]}, a ${thomsCloset[0][2]}, and ${thomsCloset[1][0]}.`);
+
+
+// Dirty Laundry
+ // #1
+for (let type of kristynsCloset) {
+    console.log(`WHIRR: Now washing ${type}`)
+}
+// Inventory
+// #2
+
+for (let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+}
+*/
