@@ -91,6 +91,9 @@ jimHaff.splice(2, 1);
 // 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 // 2. Use a `for loop` to call `.toUpperCase()` on each of them and print out the result.
+for (let i = 0; i < ninjaTurtles.length; i++) {
+    console.log(ninjaTurtles[i].toUpperCase());
+}
 
 // 3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 for (let i = 0; i < ninjaTurtles.length; i++) {
