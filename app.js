@@ -96,4 +96,48 @@ let turtle= ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for(let t = 0; t<turtle.length; t++){
     console.log(turtle[t].toUpperCase()); 
 }
-    
+
+// commit 7 return of the closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+// had issues with 7 and second half of 8 
+
+// commit 8 dirty laundry
+
+for (var c =0; c<kristynsCloset.length; c++)
+console.log("WHIRR: Now washing "+kristynsCloset[c]);
+
+
+
+
+
+
