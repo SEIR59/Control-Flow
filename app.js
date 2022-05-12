@@ -27,6 +27,7 @@ for (let i = 1; i < 21; i++) {
 } */
 
 // queston 4
+/*
 let one = "Fizz";
 let two = "Bizz";
 
@@ -41,4 +42,34 @@ for (let i = 1; i < 101; i++) {
   // else if (i%3===0) {
   // console.log();
   //}
-}
+}  */
+// question 5
+
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+
+kenny[0]="Gameboy";
+console.log(`Jim Clark decides that ` + kenny[0] + ` can't be named "` + kenny[0] + `" anymore.`);
+
+jimClark[1]++;
+console.log(jimClark[1]);
+
+ryan[2]= "Gotham City";
+console.log(ryan[2]);
+
+reuben.pop();
+console.log(reuben);
+reuben.push("Chicago");
+console.log(reuben);
+
+jimHaff.pop();
+console.log(jimHaff);
+jimHaff.push("Addis Abeba","Washington DC","Kenya");
+console.log(jimHaff); 
+
+jimHaff.splice(2,2);
+console.log(jimHaff);
