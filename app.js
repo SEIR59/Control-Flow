@@ -150,8 +150,43 @@ const kristynsCloset = [
     let todaysOutfit = `Thom is wearing a ${firstItem}, some ${secondItem} and a ${thirdItem}.`; 
     console.log(todaysOutfit);
 
-    // Dirty Laundry
+    // 2. Dirty Laundry
+    // kristynsCloset
     let numItems = kristynsCloset.length
     for (let i = 0; i < numItems; i++) {
         console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
     }
+
+    // thomsCloset
+    let numItems;
+    for (let i = 0; i < thomsCloset.length; i++) {
+        numItems = thomsCloset[i].length
+        for (let j = 0; j < numItems; j++) {
+            console.log(`WHIRR: Now washing ${thomsCloset[i][j]}`);
+        }
+    }
+
+    // 2. Inventory
+    const thomsInventory = {
+        shirts: [],
+        pants: [],
+        accessories: []Í
+    };
+
+    for (let i = 0; i < thomsCloset.length; i++) {
+        if ( i === 0) {
+            thomsInventory.shirts = thomsCloset[i];
+        } else if (i === 1) {
+            thomsInventory.pants = thomsCloset[i];
+        } else if (i === 2) {
+            thomsInventory.accessories = thomsCloset[i];
+        }
+    }
+
+// Multiples of 3 and 5
+let total = 0;
+for (let i = 0; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        total += i;
+    }
+}
