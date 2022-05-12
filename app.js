@@ -29,18 +29,18 @@
 
 //2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
-for(let i = 0; i <= 20; i++){
-  if(i % 2 === 0) {
-    r = Math.floor(Math.random() * 3);
-    if(r===0){
-      console.log("..human...why you taking pictures of me?...")
-    } else if ( r===1){
-      console.log("...the catnip made me do it...")
-    } else {
-      console.log("...the catnip made me do it...")
-    }
-}
-}
+// for(let i = 0; i <= 20; i++){
+//   if(i % 2 === 0) {
+//     r = Math.floor(Math.random() * 3);
+//     if(r===0){
+//       console.log("..human...why you taking pictures of me?...")
+//     } else if ( r===1){
+//       console.log("...the catnip made me do it...")
+//     } else {
+//       console.log("...the catnip made me do it...")
+//     }
+// }
+// }
     
 
 // ## Fizz Buzz 
@@ -195,6 +195,22 @@ console.log(kristynsShoe)
 // _Yes, you might have tackled this earlier, but try it again (don't look back at your other code :eyes:)_
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+let multiples = []
+
+for(let i = 0; i <= 1000; i++){
+  if(i % 3 === 0 || i % 5 === 0){
+    multiples.push(i)
+  }
+} 
+
+sum = 0
+
+for(let i = 0; i<multiples.length; i++){
+   sum += multiples[i];
+}
+
+console.log(sum);
 
 // Find the **sum** of all the multiples of 3 or 5 below 1000.
 
