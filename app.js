@@ -79,7 +79,7 @@ console.log(jimHaff);
 
 //question 6
 
-const nMembers = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+/* const nMembers = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 for (let i = 0; i < nMembers.length; i++) {
   console.log(nMembers[i].toUpperCase());
@@ -92,3 +92,56 @@ for (let i = 0; i < 5; i++) {
     console.log(nMembers[i].toLowerCase());
   }
 }
+*/
+
+// question 7
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  
+  let kristynsShoe = kristynsCloset.shift();
+  console.log(kristynsShoe);
+  
+  thomsCloset[2,2].push(kristynsShoe);
+  console.log(thomsCloset);
+   
+  console.log("Kristyn is wearing " +kristynsCloset[4] + ", a " +kristynsCloset[2] + " and " + kristynsCloset[0] );
+  let yo = Math.floor(Math.random() * 2);
+  let xo = Math.floor(Math.random() * 2);
+  let zo = Math.floor(Math.random() * 2);
+  let ao = Math.floor(Math.random() * thomsCloset[yo].length);
+  let bo = Math.floor(Math.random() * thomsCloset[yo].length);
+  let co = Math.floor(Math.random() * thomsCloset[yo].length);
+  console.log("Thom is wearing " + thomsCloset[yo][ao] + ", a " + thomsCloset[xo][bo] + " and " + thomsCloset[zo][co]);
+  
+  
+
+
