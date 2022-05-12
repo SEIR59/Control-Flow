@@ -157,3 +157,35 @@ for(let i =0; i<thomsCloset.length; i++){
     console.log(thomsCloset[i]);
   }
 
+//"Commit 9 - Project Euler Problem 1 answered"
+let li =[];
+let limit =1000;
+
+for (let i=0;3*i<limit;i++){
+
+  let a=1;
+  
+  a = (a+i)*3;
+  if(a<limit){
+    li.push(a);
+  }
+
+  let b=1;
+  b = (b+i)*5;
+if(b%3 !== 0 && b < limit){
+    li.push(b);
+}
+ 
+}
+li= li.sort(function (a, b) {  return a - b;  });
+console.log(li);
+
+
+
+let sum = 0;
+for (let i = 0; i < li.length; i++) {
+    sum += li[i];
+}
+console.log(sum);
+
+
