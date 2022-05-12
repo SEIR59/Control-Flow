@@ -85,15 +85,21 @@ function worldTravelorHaff(){
 
 //Runs each function 
 function mainOperation(){
-kennyChange();
-jimmyYearOlder();
-ryanTheRobinBat();
-migrationOfReuben();
-worldTravelorHaff();
+    kennyChange();
+    jimmyYearOlder();
+    ryanTheRobinBat();
+    migrationOfReuben();
+    worldTravelorHaff();
 }
 
 //Runs every function
 mainOperation();
 
+//Yell at the Ninja Turtles
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
+for(let i = 0; i < ninjaTurtles.length; i++){
+    let upperCaseNinjas = ninjaTurtles[i].toUpperCase();
+    console.log(upperCaseNinjas);
+}
 
