@@ -92,3 +92,11 @@ for (let i = 0; i < kristynsCloset.length; i++){
   for (let j = 0; j < thomsCloset.length; j++){
     console.log(thomsCloset[j])
   }
+
+  //question 9
+let x = 0
+for (let i = 0; i < 1001; i++){
+  if (i % 3 === 0 || i % 5 === 0){
+    x = x + i
+  }
+}
