@@ -95,10 +95,24 @@ const kristynsCloset = [
     ]
   ];
 
-  kristynsCloset.shift();
-  console.log(kristynsCloset);
-  const kristynsShoe = "left shoe";
-  thomsCloset[2].push(kristynsShoe);
-  console.log(thomsCloset);
+//   kristynsCloset.shift();
+//   console.log(kristynsCloset);
+//   const kristynsShoe = "left shoe";
+//   thomsCloset[2].push(kristynsShoe);
+//   console.log(thomsCloset);
 
-  console.log("Kristyn is wearing " + kristynsCloset[2] + ", " + kristynsCloset[3] + " and " + kristynsCloset[0] + ".");
+//   console.log("Kristyn is wearing " + kristynsCloset[2] + ", " + kristynsCloset[3] + " and " + kristynsCloset[0] + ".");
+
+// I loops through their closets
+ for (let i = 0; i < kristynsCloset.length; i++) {
+     console.log("WHIRR: Now washing " + kristynsCloset[i]);
+ }
+ 
+ console.log(thomsCloset[0].length + thomsCloset[1].length + thomsCloset[2].length);
+
+// Multiples of 3 and 5
+// for (let i = 0; i <= 100; i++) {
+//     if (i % 3 === 0 || i % 5 === 0) {
+//         console.log(i)
+//     }
+// }
