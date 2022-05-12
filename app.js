@@ -150,3 +150,11 @@ console.log(thomsCloset);
 //Dress em up
 console.log("Kristyn is wearing " + kristynsCloset[0] + ", a " + kristynsCloset[2] + " and " + kristynsCloset[3] + ".");
 console.log("Thoms is wearing a " + thomsCloset[0][1] + ", a " + thomsCloset[2][1] + " and " + thomsCloset[2][2] + ".");
+
+//Dirty Laundry
+for(let i = 0; i < kristynsCloset.length; i++){
+    console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+//Inventory
+console.log(thomsCloset[0] + thomsCloset[1] + thomsCloset[2]);
