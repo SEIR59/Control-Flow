@@ -102,7 +102,7 @@ let ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
           "grey button-up",
           "dark grey button-up",
           "light blue button-up",
-          "blue button-up",
+          "blue button-up"
         ],[
           // These are Thom's pants
           "grey jeans",
@@ -121,3 +121,12 @@ let ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
     console.log(`Kristyn is wearing ${kristynsCloset[3]}, a ${kristynsCloset[1]}, ${kristynsCloset[5]}`)
 
     console.log(`Thom is wearing a ${thomsCloset[0][1]}, ${thomsCloset[1][1]}, and a pair of ${thomsCloset[2][2]}`)
+
+    for (let q = 0;q  < kristynsCloset.length; q++) {
+        console.log(`WHIRR: Now washing ${kristynsCloset[q]}`)
+    }
+    for (let r = 0; r < thomsCloset.length; r++) {
+        console.log(thomsCloset[r])
+    }
+        
+    
