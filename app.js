@@ -143,7 +143,8 @@ const kristynsCloset = [
   console.log("Thom is wearing " + thomsCloset[yo][ao] + ", a " + thomsCloset[xo][bo] + " and " + thomsCloset[zo][co]);
   
   */
-//folowup
+ 
+//question 8
 
 for(let i =0;i<kristynsCloset.length;i++){
     console.log( "Now washing "+ kristynsCloset[i]);
