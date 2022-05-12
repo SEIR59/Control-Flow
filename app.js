@@ -73,7 +73,21 @@ const ninja = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let i = 0; i < ninja.length; i++) {
   console.log(ninja[i].toUpperCase());
 }
-///bonus??
+///bonus
+let ninjaBonus = [];
+let temp = [];
+for (index in ninja) {
+  for (let i = 0; i < ninja[index].length; i++) {
+    if (i % 2 == 0) {
+      temp.push(ninja[index].charAt(i).toUpperCase());
+    } else {
+      temp.push(ninja[index].charAt(i));
+    }
+  }
+  ninjaBonus.push(temp.join(""));
+  temp = [];
+}
+console.log(ninjaBonus);
 
 /** Return of the closest */
 const kristynsCloset = [
