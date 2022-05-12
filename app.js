@@ -80,6 +80,10 @@ for(i = 0; i < ninjaTurtle.length; i++) {
 console.log(ninjaTurtle);
 //Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 //Dont quite clear about the requirement
+for(i = 0; i < ninjaTurtle.length; i++) {
+    ninjaTurtle[i] = ninjaTurtle[i].toLowerCase();
+}
+console.log(ninjaTurtle);
 
 //#####Return of the Closets######//
 //Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
