@@ -69,18 +69,21 @@ function ryanTheRobinBat(){
     console.log(ryan);
 }
 
+//Reuben moved to Chicago
 function migrationOfReuben(){
     reuben.pop();
     reuben.push("Chicago");
     console.log(reuben);
 }
 
+//Hoff stays anywhere they want
 function worldTravelorHaff(){
     jimHaff.pop();
     jimHaff.push("Gdansk", "Raleigh", "Orlando");
     console.log(jimHaff);
 }
 
+//Runs each function 
 function mainOperation(){
 kennyChange();
 jimmyYearOlder();
@@ -89,5 +92,8 @@ migrationOfReuben();
 worldTravelorHaff();
 }
 
+//Runs every function
 mainOperation();
+
+
 
