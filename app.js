@@ -14,7 +14,7 @@ for (let i = 0; i <= 200; i +=2){
 
 const catArray=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 let catPhrase=["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
-let generate = Math.floor((Math.random(4)) * catPhrase.length);
+let generate = Math.floor((Math.random()) * catPhrase.length);
 for (let c = 0; c < catArray.length; c++){
    if(catArray[c] % 2 === 0)
        console.log(catPhrase[generate])
@@ -123,4 +123,21 @@ console.log(thomsCloset);
 
 // not sure how to manipulate an array nested within an array
 
+// 8. Dirty laundry
+for (var c =0; c<kristynsCloset.length; c++)
+console.log("WHIRR: Now washing "+kristynsCloset[c]);
+
+  // Inventory
+const thomsShirts = ["grey button-up",
+"dark grey button-up",
+"light blue button-up",
+"blue button-up"]
+const thomsPants =  ["grey jeans",
+"jeans",
+"PJs"]
+const thomsAccessories = ["wool mittens",
+"wool scarf",
+"raybans"]
+const thomsWholeCloset = ["thomsShirts", "thomsPants", "thomsAccessories"]
+  console.log(thomsWholeCloset)
 
