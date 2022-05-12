@@ -149,5 +149,13 @@ if(e %3===0 || e % 5 ===0){
     sum += e;
 }
 }
-    console.log(sum)
+    console.log(sum);
 
+//Bonus
+// Triangles
+
+var argument = 7;
+for(argument=1; argument<=7; argument++)
+    if(argument <=7 +1)
+        console.log("#")
+    
