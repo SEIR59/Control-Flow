@@ -71,3 +71,18 @@ let item3 = thomsCloset[Math.floor(getRandomInt(10) % 3)][Math.floor(getRandomIn
 
 let outfit = "Thom is wearing " + item1 + " with some " + item2 + " and " + item3;
 console.log(outfit);
+
+/*### Dirty Laundry
+Continue looking at the closet arrays:
+1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+
+### Inventory
+2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.*/
+
+  
+for (let i = 0; i < kristynsCloset.length; i++) {
+  console.log("WHIRR: Now washing " + kristynsCloset[i]);
+
+}
+console.log(thomsCloset[0] + thomsCloset[1] + thomsCloset[2])
+
