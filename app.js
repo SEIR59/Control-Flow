@@ -320,6 +320,8 @@ for (let i = 0; i < 1000; i++) {
 console.log(sum);
 
 
+
+//WILL TACKLE THESE LATER
 /* Hungry for more?
 
 ## Triangles
@@ -389,6 +391,13 @@ console.log(sum);
 The commit message should read:
 "Commit 10 - Triangles answered"
 */
+
+// let argument = 7;
+
+// for (i = 0; i < argument; i++) {
+
+//     console.log("#");
+// }
 
 /* Find the Median
 - Find the median number in the following `nums` array, then console.log that number.
