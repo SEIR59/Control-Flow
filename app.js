@@ -36,3 +36,58 @@ while(b <= 100){
     }
     b++;
 }
+
+//Getting to Know You
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+//Removes "Kenny" replaces with "Gameboy"
+function kennyChange(){
+kenny.shift();
+kenny.unshift("GameBoy");
+console.log(kenny);
+}
+
+//Takes Jimmies age and makes him older
+function jimmyYearOlder(){
+    let oldAge = jimClark[1];
+    let newAge = oldAge + 1;
+    jimClark[1] = newAge;
+    console.log(jimClark);
+}
+
+/* Makes Ryan's hometown Gotham city, 
+nobody has seen him in the same room as batman and robin,
+therefore he could be both
+*/
+function ryanTheRobinBat(){
+    ryan.pop();
+    ryan.push("Gotham City");
+    console.log(ryan);
+}
+
+function migrationOfReuben(){
+    reuben.pop();
+    reuben.push("Chicago");
+    console.log(reuben);
+}
+
+function worldTravelorHaff(){
+    jimHaff.pop();
+    jimHaff.push("Gdansk", "Raleigh", "Orlando");
+    console.log(jimHaff);
+}
+
+function mainOperation(){
+kennyChange();
+jimmyYearOlder();
+ryanTheRobinBat();
+migrationOfReuben();
+worldTravelorHaff();
+}
+
+mainOperation();
+
