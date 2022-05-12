@@ -18,7 +18,7 @@ for (let i = 1; i <= 20; i++) {
 
 */
 
-for (let j = 2; j <= 200; j+=2) {
-    console.log(j);
+for (let j = 0; j <= 200; j++) {
+    if (j % 2 === 0)
+        console.log(j);
 }
-
