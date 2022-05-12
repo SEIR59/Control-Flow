@@ -30,32 +30,32 @@
        // console.log("FizzBuzz")}
     //}
 
-    5. getting to know you
+    //5. getting to know you
 
 
-    const kenny = ["Kenny", 1000, "Austin"];
-    const jimHaff = ["Jim H", 16, "All cities"];
-    const reuben = ["Reuben", 22, "Durham"];
-    const jimClark = ["Jim C", 186, "LA"];
-    const ryan = ["Ryan", 65, "Denver"];
+    //const kenny = ["Kenny", 1000, "Austin"];
+    //const jimHaff = ["Jim H", 16, "All cities"];
+    //const reuben = ["Reuben", 22, "Durham"];
+    //const jimClark = ["Jim C", 186, "LA"];
+    //const ryan = ["Ryan", 65, "Denver"];
+    //
+    //kenny[0] = "Gameboy"
+    //console.log(kenny);
     
-    kenny[0] = "Gameboy"
-    console.log(kenny);
+    //jimClark[1] = jimClark[1] + 1;
+    //console.log(jimClark[1]);
     
-    jimClark[1] = jimClark[1] + 1;
-    console.log(jimClark[1]);
+    //ryan[2] = "Gotham City"
+    //console.log(ryan);
     
-    ryan[2] = "Gotham City"
-    console.log(ryan);
+    //reuben.pop();
+    //console.log(reuben);
+    //reuben.push("Chicago");
+    //console.log(reuben);
     
-    reuben.pop();
-    console.log(reuben);
-    reuben.push("Chicago");
-    console.log(reuben);
-    
-    jimHaff.pop();
-    jimHaff.push("Singapore", "Hong Kong", "Shanghai");
-    console.log(jimHaff);
+    //jimHaff.pop();
+    //jimHaff.push("Singapore", "Hong Kong", "Shanghai");
+    //console.log(jimHaff);
 
-
+6. 
 
