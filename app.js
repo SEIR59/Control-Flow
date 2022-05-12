@@ -77,3 +77,47 @@ let ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
     for (let M = 0; M <= 3 ; M++) {
         console.log(ninjaTurtles[M].toUpperCase())
     }
+    // Alien Attire
+
+    // Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+   
+    // Dress 'em Up
+
+    // Let's create some outfits for both Kristyn and Thom. Select 3 elements from kristynsCloset and inject them into a sentence that reads, for example, "Kristyn is wearing green pants, a right sock, and marshmallow peeps" so that "green pants", "right sock", and "marshmallow peeps" are dynamically injected into the string. Do the same thing for Thom using thomsCloset. (Here's a suggestion that's not required: If you really want to challenge yourself, see if you can make the selections randomly from each of their arrays.)
+    
+    const kristynsCloset = [
+        "left shoe",
+        "cowboy boots",
+        "right sock",
+        "GA hoodie",
+        "green pants",
+        "yellow knit hat",
+        "marshmallow peeps"
+      ];
+      
+      // Thom's closet is more complicated. Check out this nested data structure!!
+      const thomsCloset = [
+        [
+          // These are Thom's shirts
+          "grey button-up",
+          "dark grey button-up",
+          "light blue button-up",
+          "blue button-up",
+        ],[
+          // These are Thom's pants
+          "grey jeans",
+          "jeans",
+          "PJs"
+        ],[
+          // Thom's accessories
+          "wool mittens",
+          "wool scarf",
+          "raybans"
+        ]
+      ];
+
+    kristynsShoe = kristynsCloset.shift()
+
+    console.log(`Kristyn is wearing ${kristynsCloset[3]}, a ${kristynsCloset[1]}, ${kristynsCloset[5]}`)
+
+    console.log(`Thom is wearing a ${thomsCloset[0][1]}, ${thomsCloset[1][1]}, and a pair of ${thomsCloset[2][2]}`)
