@@ -18,9 +18,9 @@ for (let i = 1; i <= 20; i++) {
 
 */
 
-for (let j = 0; j <= 200; j++) {
-    if (j % 2 === 0)
-        console.log(j);
+for (let i = 0; i <= 200; i++) {
+    if (i % 2 === 0)
+        console.log(i);
 }
 
 /* Excited Kitten
@@ -36,22 +36,9 @@ The commit message should read:
 "Commit 3 - Excited Kittens answered"
 */
 
-/* Excited Kitten
-1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
-
-2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
-
->Hint: You will need to use Math.random()
-
-![Image of cat with funny quote about dot](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRETGsssSXu2AS15GpQIBhuSgkhP2q_4JZcPopN4dFP-v85mAePGA)
-
-The commit message should read:
-"Commit 3 - Excited Kittens answered"
-*/
-
 const evenArray = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
-for (let k = 0; k <= 20; k++) {
-    if (k % 2 === 0) {
+for (let i = 0; i < 20; i++) {
+    if (i % 2 === 0) {
         let randomPhrase = Math.floor(Math.random() * 3)
         console.log(evenArray[randomPhrase]);
     }
@@ -78,18 +65,18 @@ The commit message should read:
 "Commit 4 - Fizz Buzz answered"
 */
 
-for (l = 1; l <= 100; l++) {
-    if (l % 3 === 0 && l % 5 === 0)
+for (i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0)
         console.log("FizzBuzz");
 
-    else if (l % 3 === 0)
+    else if (i % 3 === 0)
         console.log("Fizz");
 
-    else if (l % 5 === 0)
+    else if (i % 5 === 0)
         console.log("Buzz");
     
     else
-        console.log(l);
+        console.log(i);
 }
 
 /* Getting to Know You
@@ -158,6 +145,24 @@ console.log(jimHaff);
 The commit message should read:
 "Commit 6 - Yell at the Ninja Turtles answered"
 */
+
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let i = 0; i < ninjaTurtles.length; i++) {
+    console.log(ninjaTurtles[i].toUpperCase());
+}
+
+for (let i = 0; i < ninjaTurtles.length; i++) {
+    // console.log(ninjaTurtles[n].toUpperCase());
+    let word = ninjaTurtles[i];
+    let tempName = ''
+    for (let j = 0; j < word.length; j++){
+        tempName += j % 2 === 0 ? word[j].toUpperCase() : word[j].toLowerCase();
+    }
+    console.log(tempName);
+}
+
+
 
 /* Return of the Closets
 
