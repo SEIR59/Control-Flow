@@ -141,3 +141,11 @@ console.log("WHIRR: Now washing "+kristynsCloset[c]);
 
 
 
+// Commit 9  mutiples of 3 and 5
+var sum =0;
+for(var e = 0; e <= 1000; e++) {
+if(e %3===0 || e%5===0){
+    sum += e;
+}
+}
+    console.log(sum);
