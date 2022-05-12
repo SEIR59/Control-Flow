@@ -93,3 +93,9 @@ const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
   thomsCloset[2].push(kristynsShoe)
   console.log("Kristyn is wearing " + kristynsCloset[3] + ", a " + kristynsCloset[1] + ", and " + kristynsCloset[5]);
   console.log("Thomas is wearing " + thomsCloset[1][1] + ", a " + thomsCloset[0][2] + ", and " + thomsCloset[2][2]);
+//8
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log("WHIRR: Now washing "  + kristynsCloset[i]);
+}
+console.log(thomsCloset[0] + thomsCloset[1] + thomsCloset[2])
+
