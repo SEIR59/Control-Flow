@@ -104,7 +104,7 @@ console.log("Thom is wearing " + thomsCloset[0][0] + ", " + thomsCloset[1][0] + 
 
 // 8.
 console.log("DIRTY LAUNDRY AND INVENTORY")
-for (let i = 0; i < 7; i++) {
+for (let i = 0; i < 6; i++) {
     console.log("WHIRR: Now Washing " + kristynsCloset[i]);
 }
 
