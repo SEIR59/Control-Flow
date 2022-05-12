@@ -234,3 +234,22 @@ for (let i = 0; i < argument; i++) {
     extraSpace = extraSpace.concat(" ");
     console.log(extraSpace + currentLine);
 }
+
+// find the Median
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+let arrLength = nums.length;
+nums.sort(function(a, b) {
+  return a - b;
+});
+
+let numsMedian;
+0 - 24
+if (arrLength % 2 === 0) {
+    console.log("even");
+    numsMedian = ((nums[(arrLength/2)] + nums[(arrLength/2) + 1]) / 2);
+} else {
+    console.log("odd");
+    numsMedian = (nums[(arrLength + 1) / 2]);
+}
+
+console.log(numsMedian);
