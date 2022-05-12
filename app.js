@@ -13,7 +13,7 @@ Get Even
 for (let i = 0; i < 201; i += 2) {
      console.log(i);
 }
-*/
+
 
 // Excited Kitten
 
@@ -26,4 +26,18 @@ const myArr = ["...human...why you taking pictures of me?...", "...the catnip ma
 const random = Math.floor(Math.random() * myArr.length);
     if (i %2 === 0) {
         console.log(myArr[random])}
+    }
+*/
+
+// Fizz Buzz
+
+for (let i = 0; i < 100; i++) {
+    // console.log(i);
+    if (i %3 === 0 && i %5 ===0) {
+        console.log("Fizz Buzz");
+    } else if (i %3 === 0) {
+        console.log("Fizz")
+    } else if (i %5 === 0) {
+        console.log("Buzz")
+    } 
     }
