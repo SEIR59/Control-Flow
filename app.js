@@ -122,7 +122,7 @@ const kristynsCloset = [
   const aboutThom = "Thom is wearing " + thomsCloset[0][1] + " shirt, a " + thomsCloset[1][1] + ", and " + thomsCloset[2][1] + ".";
   
   console.log(aboutKristyn);
-  console.log(thomsCloset[2][0]);
+  console.log(thomsCloset[2]);
   console.log(aboutThom);
 
 //Dirty Laundry. Continue looking at the closet arrays: Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
@@ -130,4 +130,11 @@ for(let i = 0; i < kristynsCloset.length; i++) {
     console.log("WHIRR: Now washing " + kristynsCloset[i]);
 } 
 //Inventory. Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-//Bracket Notation, dont understand
+for(let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
+} 
+
+//#####Multiples of 3 and 5######//
+//Yes, you might have tackled this earlier, but try it again (don't look back at your other code 👀)
+// If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+// Find the sum of all the multiples of 3 or 5 below 1000.
