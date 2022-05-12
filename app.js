@@ -60,3 +60,18 @@ console.log(jimHaff)
 //6
 jimHaff.splice(2, 1, ["New Jersey", "New Hampshire"])
 console.log(jimHaff)
+
+//question 6
+let arr = ["Donatello", "Leonardo", "Michaelangelo"]
+for (let i = 0; i < arr.length; i++){
+  let x = ""
+    for (let j = 0; j < arr[i].length; j++){
+        if (j % 2 === 0){
+            x = x + arr[i][j].toUpperCase()
+        } else {
+          x = x + arr[i][j]
+        }
+    }
+    arr[i] = x
+}
+console.log(arr)
