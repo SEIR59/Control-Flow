@@ -29,18 +29,15 @@
 
 //2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
-// for(let i = 0; i <= 20; i++){
-//   if(i % 2 === 0) {
-//     r = Math.floor(Math.random() * 3);
-//     if(r===0){
-//       console.log("..human...why you taking pictures of me?...")
-//     } else if ( r===1){
-//       console.log("...the catnip made me do it...")
-//     } else {
-//       console.log("...the catnip made me do it...")
-//     }
-// }
-// }
+for(let i = 0; i <= 20; i++){
+  if(i % 2 === 0) {
+    r = Math.floor(Math.random() * 3);
+    evenArray = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+    console.log(evenArray[r])
+} else {
+  console.log("Love me, pet me! HSSSSSS!")
+}
+}
     
 
 // ## Fizz Buzz 
@@ -181,9 +178,9 @@ const kristynsCloset = [
 // Continue looking at the closet arrays:
 // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
-for(i = 0; i < kristynsCloset.length; i++){
-  console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
-}
+// for(i = 0; i < kristynsCloset.length; i++){
+//   console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
+// }
 
 // ### Inventory
 // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
