@@ -141,10 +141,31 @@ const kristynsCloset = [
       "raybans"
     ]
   ];
-
-  let kristynShoe = kristynsCloset[0]
-  console.log(kristynShoe);
-  kristynsCloset.remove(0)
+  let kristynShoe = kristynsCloset.shift()
   console.log(kristynsCloset)
+  console.log(kristynShoe)
+  thomsCloset[2].push(kristynShoe)
+  console.log(thomsCloset);
+
 
   // Got stuck here so I took to the debugging channel
+  // Got help from Bryce Henderson
+
+  
+console.log("Krystn is wearing "  + kristynsCloset[2] + " " + kristynsCloset[1] + " and " + kristynsCloset[0]);
+console.log("Thom is rather dapper in his " + thomsCloset[0][1] + " " + thomsCloset[1][0] + " and " + thomsCloset[2][1]);
+
+
+// Mental fatigue is setting in have to get sleep in order to focus and retain tomorrows lesson.
+
+for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log("WHIRR: Now washing " +kristynsCloset[i])
+}
+
+for (let i = 0; i <= thomsCloset[0].length; i++) {
+    console.log(thomsCloset[i]);
+}
+
+// got that one right just by thinking through it!! right on the first go around!!!!!! super proud of myself for that one!!!
+// got through Thoms closet with the same profeciency!!! its starting to stick!!!
+
