@@ -62,6 +62,46 @@ const nTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 
 for(let i = 0; i < nTurtles.length; i++) {
-    let turtle = console.log(nTurtles[i]);
-    console.log(toUpperCase(turtle))
+    //let turtle = console.log(nTurtles[i]);
+    //console.log(turtle.toUppercase())
+    console.log()
 }
+
+//7. Return of the closets
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  kristynsCloset.shift()
+  let kristynsShoe = 'left shoe'
+
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  thomsCloset[2].push(kristynsCloset)
+  console.log(thomsCloset[2])
