@@ -61,7 +61,7 @@
 const nTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
 
-for(let i = 0; i < nTurtles.length; i++) {
+for (let i = 0; i < nTurtles.length; i++) {
     //let turtle = console.log(nTurtles[i]);
     //console.log(turtle.toUppercase())
     console.log()
@@ -77,46 +77,83 @@ const kristynsCloset = [
     "green pants",
     "yellow knit hat",
     "marshmallow peeps"
-  ];
-  
-  kristynsCloset.shift()
-  let kristynsShoe = 'left shoe'
+];
 
-  // Thom's closet is more complicated. Check out this nested data structure!!
-  const thomsCloset = [
+kristynsCloset.shift()
+let kristynsShoe = 'left shoe'
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
     [
-      // These are Thom's shirts
-      "grey button-up",
-      "dark grey button-up",
-      "light blue button-up",
-      "blue button-up",
-    ],[
-      // These are Thom's pants
-      "grey jeans",
-      "jeans",
-      "PJs"
-    ],[
-      // Thom's accessories
-      "wool mittens",
-      "wool scarf",
-      "raybans"
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ], [
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ], [
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
     ]
-  ];
+];
 
-  thomsCloset[2].push(kristynsCloset)
-  console.log(thomsCloset[2])
+thomsCloset[2].push(kristynsCloset)
+console.log(thomsCloset[2])
 
-  //9. Dirty Laundry
+//9. Dirty Laundry
 
-  
- 
-  for(let i = 1; i < 1000; i++) {
-    let sum = i;
-  
-    if(i % 3 === 0 || i % 5 === 0){
-       sum += i; 
-    
-       console.log(sum)
-          } 
-           
+
+
+
+for (let i = 1; i < 1000; i++) {
+    let sum = 0;
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum = sum + i;
+        console.log(sum);
+
+    }
+
+}
+
+//10. Triangles
+
+let tri = 4
+
+for (let i = 0; i <= 7; i++) {
+    if (i === 1) {
+        console.log("#")
+    } else if (i === 2) { console.log("##") }
+    else if (i === 3) { console.log("###") }
+    else if (i === 4) { console.log("####") }
+    else if (i === 5) { console.log("#####") }
+    else if (i === 6) { console.log("######") }
+    else if (i === 7){ console.log("#######") }
+}
+
+for (let i = 0; i <= 7; i++) {
+    if (i === 1) {
+        console.log("      #")
+    } else if (i === 2) { console.log("     ##") }
+    else if (i === 3) { console.log("    ###") }
+    else if (i === 4) { console.log("   ####") }
+    else if (i === 5) { console.log("  #####") }
+    else if (i === 6) { console.log(" ######") }
+    else if (i === 7){ console.log("#######") }
+}
+
+for (let i = 0; i <= 7; i++) {
+    if (i === 1) {
+        console.log("#######")
+    } else if (i === 2) { console.log(" ######") }
+    else if (i === 3) { console.log("  #####") }
+    else if (i === 4) { console.log("   ####") }
+    else if (i === 5) { console.log("    ###") }
+    else if (i === 6) { console.log("     ##") }
+    else if (i === 7){ console.log("      #") }
 }
