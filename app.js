@@ -164,9 +164,9 @@ const kristynsCloset = [
 // ### Alien Attire
 // 1. Remove Kristyn's shoe from the array and save it to the variable `kristynsShoe`. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 
-let kristynsShoe = kristynsCloset.slice(0,1);
-herShoeString = kristynsShoe.toString();
-thomsCloset[2].push(herShoeString);
+// let kristynsShoe = kristynsCloset.slice(0,1);
+// herShoeString = kristynsShoe.toString();
+// thomsCloset[2].push(herShoeString);
 //console.log(thomsCloset[2])
 
 
@@ -181,10 +181,9 @@ thomsCloset[2].push(herShoeString);
 // Continue looking at the closet arrays:
 // 1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 
-// for(i = 0; i < kristynsCloset.length; i++){
-//   i++;
-//   console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
-// }
+for(i = 0; i < kristynsCloset.length; i++){
+  console.log(`WHIRR: Now Washing ${kristynsCloset[i]}`)
+}
 
 // ### Inventory
 // 2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
