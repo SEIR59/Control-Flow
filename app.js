@@ -169,3 +169,13 @@ for (let i = 0; i <= thomsCloset[0].length; i++) {
 // got that one right just by thinking through it!! right on the first go around!!!!!! super proud of myself for that one!!!
 // got through Thoms closet with the same profeciency!!! its starting to stick!!!
 
+int multiplier(int 1000)
+ {
+     int i, x3 = 0, x5 = 0, x15 = 0;
+     for(i = 3; i < max; i+3) x3 +=i;
+     for(i = 5; i < max; i+5) x5 +=i;
+     for(i = 15; i < max; i+15) x3 +=i;
+     return x3+x5-x15
+ }
+// failed to find solution for this last problem will need a 1on1 sessiopn to get to tghe bottom of the homework and gleem better comprehension
+//time now is 12:01am been at computer since 6am this morning. I will not quit!!!!!!
