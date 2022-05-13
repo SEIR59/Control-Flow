@@ -157,3 +157,13 @@ for (let i = 0; i <= 7; i++) {
     else if (i === 6) { console.log("     ##") }
     else if (i === 7){ console.log("      #") }
 }
+
+//11. Find the median 
+
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+ 
+const median = nums => {
+    let middle = Math.floor(arr.length / 2);
+    nums.sort((a, b) => a - b);
+    return nums.length % 2 !== 0 ? nums[middle] : (nums[middle - 1]+ nums[middle])
+};
