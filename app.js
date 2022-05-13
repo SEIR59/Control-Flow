@@ -29,18 +29,18 @@
 
 //2. For every **even** number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 
-for(let i = 0; i <= 20; i++){
-  if(i % 2 === 0) {
-    r = Math.floor(Math.random() * 3);
-    if(r===0){
-      console.log("..human...why you taking pictures of me?...")
-    } else if ( r===1){
-      console.log("...the catnip made me do it...")
-    } else {
-      console.log("...the catnip made me do it...")
-    }
-}
-}
+// for(let i = 0; i <= 20; i++){
+//   if(i % 2 === 0) {
+//     r = Math.floor(Math.random() * 3);
+//     if(r===0){
+//       console.log("..human...why you taking pictures of me?...")
+//     } else if ( r===1){
+//       console.log("...the catnip made me do it...")
+//     } else {
+//       console.log("...the catnip made me do it...")
+//     }
+// }
+// }
     
 
 // ## Fizz Buzz 
@@ -55,19 +55,19 @@ for(let i = 0; i <= 20; i++){
   
 //   1. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number, "Fizz", or "Buzz".
 
-// const riteOfPassage = function(){
-//   for(let i = 1; i <=100; i++){
-//     if(i % 3 === 0 && i % 5 === 0){
-//       console.log("FizzBuzz")
-//     } else if(i % 3 === 0){
-//       console.log("Fizz")
-//     } else if( i % 5 === 0){
-//       console.log("Buzz")
-//     } else {
-//       console.log("i")
-//     }
-//   }
-// }
+const riteOfPassage = function(){
+  for(let i = 1; i <=100; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+      console.log("FizzBuzz")
+    } else if(i % 3 === 0){
+      console.log("Fizz")
+    } else if( i % 5 === 0){
+      console.log("Buzz")
+    } else {
+      console.log([i])
+    }
+  }
+}
 
 // riteOfPassage();
 // git commit -m "commit-4 Fizz Buzz Answered"
