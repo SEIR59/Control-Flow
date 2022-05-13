@@ -357,8 +357,9 @@ The commit message should read:
 
 let sum = 0;
 for (let i = 0; i < 1000; i++) {
-    if(i % 3 === 0 && i % 5 === 0)
+    if(i % 3 === 0 || i % 5 === 0)
         sum += i;
+        console.log(i);
 }
 
 console.log(sum);
@@ -388,18 +389,18 @@ console.log(sum);
 
 */
 
-let argument = 7;
+// let argument = 7;
 
-let triangle = "";
+// let triangle = "";
 
-for (let i = 1; i <= argument; i++) {
-  for (let j = 0; j < i; j++) {
-    triangle += "#";
-  }
-  triangle += '\n';
-}
+// for (let i = 1; i <= argument; i++) {
+//   for (let j = 0; j < i; j++) {
+//     triangle += "#";
+//   }
+//   triangle += '\n';
+// }
 
-console.log(triangle);
+// console.log(triangle);
 
 
 
@@ -419,22 +420,22 @@ console.log(triangle);
 ```
 */
 
-console.log(" ");
+// console.log(" ");
 
-for (let i = 1; i <= argument; i++) {
-  for (let j = 0; j < argument - i; j++) {
-    triangle += " ";
-  }
+// for (let i = 1; i <= argument; i++) {
+//   for (let j = 0; j < argument - i; j++) {
+//     triangle += " ";
+//   }
 
-  for (let m = 0; m < i; m++) {
-    triangle += "#"
-  }
+//   for (let m = 0; m < i; m++) {
+//     triangle += "#"
+//   }
 
-  triangle += '\n';
+//   triangle += '\n';
 
-}
+// }
 
-console.log(triangle);
+// console.log(triangle);
 
 
 /*
@@ -454,16 +455,16 @@ console.log(triangle);
 ```
 */
 
-console.log(" ");
+// console.log(" ");
 
-for (let i = 0; i < argument; i++) {
-  for (let j = 0; j < argument - i; j++) {
-    triangle += "#";
-  }
-  triangle += '\n';
-}
+// for (let i = 0; i < argument; i++) {
+//   for (let j = 0; j < argument - i; j++) {
+//     triangle += "#";
+//   }
+//   triangle += '\n';
+// }
 
-console.log(triangle);
+// console.log(triangle);
 
 
 /*
