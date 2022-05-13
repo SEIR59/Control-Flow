@@ -134,7 +134,9 @@ for (let i = 0; i < kristynsCloset.length; i++) {
     console.log("WHIRR: Now washing " + kristynsCloset[i])
 }
 
-console.log(thomsCloset)
+for (let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i])
+}
 
 // 9 - Project Euler Problem 1]
 let sum = 0
