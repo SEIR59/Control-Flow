@@ -34,3 +34,23 @@ function fizzbuzz() {
 }
 
 console.log(fizzbuzz());
+
+//5.Getting to know you
+
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+kenny[0] = "Gameboy";
+console.log(kenny[0]);
+
+jimClark[1] = 187;
+console.log(jimClark[1]);
+
+ryan[2] = "Gotham City";
+console.log(ryan[2]);
+
+jimHaff.splice(2, 1, 'Cleveland', 'Austin', 'Boulder');
+console.log(jimHaff)
