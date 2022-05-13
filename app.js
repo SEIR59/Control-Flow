@@ -256,15 +256,59 @@ while (testArrayK.length < 3) {
 
 console.log(`Kristyn is wearing ${kristynsCloset[testArrayK[0]]}, ${kristynsCloset[testArrayK[1]]}, and ${kristynsCloset[testArrayK[2]]}`)
 
-let testArrayT = [];
-while (testArrayT.length < 3) {
-    let tempValT = Math.floor(Math.random() * thomsCloset.length)
-    if (!testArrayT.includes(tempValT)){
-        testArrayT.push(tempValT);
-    }
-}
 
-console.log(`Thom is wearing ${thomsCloset[testArrayT[0]]}, ${thomsCloset[testArrayT[1]]}, and ${thomsCloset[testArrayT[2]]}`)
+// const thomsCloset = [
+//     [
+//       // These are Thom's shirts
+//       "grey button-up",
+//       "dark grey button-up",
+//       "light blue button-up",
+//       "blue button-up",
+//     ],[
+//       // These are Thom's pants
+//       "grey jeans",
+//       "jeans",
+//       "PJs"
+//     ],[
+//       // Thom's accessories
+//       "wool mittens",
+//       "wool scarf",
+//       "raybans"
+//     ]
+//   ];
+
+  let test = new Array()
+  for (let i = 0; i < thomsCloset.length; i++){
+    let currentArray = thomsCloset[i];
+      let randomNum = Math.floor(Math.random() * currentArray.length);
+      if(!test.includes(randomNum)){
+        test.push(randomNum);
+      }
+  }
+  console.log(`Thom is wearing ${thomsCloset[0][test[0]]}, ${thomsCloset[1][test[1]]}, and ${thomsCloset[2][test[2]]}`)
+
+
+// let testArrayT = [];
+
+// while (testArrayT.length < 3) {
+//   while (testArrayT.length < 3) {
+//     let tempValT = Math.floor(Math.random() * thomsCloset.length)
+//     if (!testArrayT.includes(tempValT)){
+//         testArrayT.push(tempValT);
+//   }
+//     }
+// }
+
+// let testArrayT = [];
+// while (testArrayT.length < 3) {
+//     let tempValT = Math.floor(Math.random() * kristynsCloset.length)
+//     if (!testArrayT.includes(tempValT)){
+//         testArrayT.push(tempValT);
+//     }
+// }
+
+
+// console.log(`Thom is wearing ${thomsCloset[testArrayT[0]]}, ${thomsCloset[testArrayT[1]]}, and ${thomsCloset[testArrayT[2]]}`)
 
 
 
@@ -342,6 +386,24 @@ console.log(sum);
 #######
 ```
 
+*/
+
+let argument = 7;
+
+let triangle = "";
+
+for (let i = 1; i <= argument; i++) {
+  for (let j = 0; j < i; j++) {
+    triangle += "#";
+  }
+  triangle += '\n';
+}
+
+console.log(triangle);
+
+
+
+/*
 2. Write a loop that console logs a "right isosceles" triangle (SEE BELOW) made of '#' that has the height and length of `argument`.  This is deceptively tricky. 
 
 >Ex: `argument` is 7
@@ -355,7 +417,27 @@ console.log(sum);
  ######
 #######
 ```
+*/
 
+console.log(" ");
+
+for (let i = 1; i <= argument; i++) {
+  for (let j = 0; j < argument - i; j++) {
+    triangle += " ";
+  }
+
+  for (let m = 0; m < i; m++) {
+    triangle += "#"
+  }
+
+  triangle += '\n';
+
+}
+
+console.log(triangle);
+
+
+/*
 
 3. Write a loop that console logs an "upside down left" isosceles triangle made of '#' that has the height and length of the argument.
 
@@ -370,7 +452,21 @@ console.log(sum);
 ##
 #
 ```
+*/
 
+console.log(" ");
+
+for (let i = 0; i < argument; i++) {
+  for (let j = 0; j < argument - i; j++) {
+    triangle += "#";
+  }
+  triangle += '\n';
+}
+
+console.log(triangle);
+
+
+/*
 4. Write a loop that console logs an "upside down right" isosceles triangle made of '#' that has the height and length of the argument.  This is also tricky.
 
 >Ex: `argument` is 7
@@ -382,7 +478,7 @@ console.log(sum);
    ####
     ###
      ##
-      #
+      #gi
 ```
 
 5. Change the value of `argument` and reload your code and marvel at how you just solved a challenging problem and feel proud of yourself.
