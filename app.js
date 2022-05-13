@@ -105,3 +105,18 @@ const kristynsCloset = [
 
   thomsCloset[2].push(kristynsCloset)
   console.log(thomsCloset[2])
+
+  //9. Dirty Laundry
+
+  
+ 
+  for(let i = 1; i < 1000; i++) {
+    let sum = i;
+  
+    if(i % 3 === 0 || i % 5 === 0){
+       sum += i; 
+    
+       console.log(sum)
+          } 
+           
+}
