@@ -55,19 +55,19 @@
   
 //   1. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number, "Fizz", or "Buzz".
 
-const riteOfPassage = function(){
-  for(let i = 1; i <=100; i++){
-    if(i % 3 === 0 && i % 5 === 0){
-      console.log("FizzBuzz")
-    } else if(i % 3 === 0){
-      console.log("Fizz")
-    } else if( i % 5 === 0){
-      console.log("Buzz")
-    } else {
-      console.log([i])
-    }
-  }
-}
+// const riteOfPassage = function(){
+//   for(let i = 1; i <=100; i++){
+//     if(i % 3 === 0 && i % 5 === 0){
+//       console.log("FizzBuzz")
+//     } else if(i % 3 === 0){
+//       console.log("Fizz")
+//     } else if( i % 5 === 0){
+//       console.log("Buzz")
+//     } else {
+//       console.log([i])
+//     }
+//   }
+// }
 
 // riteOfPassage();
 // git commit -m "commit-4 Fizz Buzz Answered"
@@ -164,8 +164,11 @@ const kristynsCloset = [
 // ### Alien Attire
 // 1. Remove Kristyn's shoe from the array and save it to the variable `kristynsShoe`. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 
-let kristynsShoe = kristynsCloset.slice(0,1)
-console.log(kristynsShoe)
+let kristynsShoe = kristynsCloset.slice(0,1);
+herShoeString = kristynsShoe.toString();
+thomsCloset[2].push(herShoeString);
+//console.log(thomsCloset[2])
+
 
 // ### Dress 'em Up
 // 1. Let's create some outfits for both Kristyn and Thom. Select 3 elements from `kristynsCloset` and inject them into a sentence that reads, for example, "Kristyn is wearing green pants, a right sock, and marshmallow peeps" so that "green pants", "right sock", and "marshmallow peeps" are dynamically injected into the string. Do the same thing for Thom using `thomsCloset`. (Here's a suggestion that's not required: If you really want to challenge yourself, see if you can make the selections randomly from each of their arrays.)
