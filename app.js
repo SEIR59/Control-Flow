@@ -96,10 +96,16 @@ console.log(jimHaff)
 
 // YELL AT THE NINJA TURTLES
 // 1. Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
-let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+const littleTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+console.log(littleTurtles)
+const ninjaTurtles = [];
+
+littleTurtles.forEach(element => {
+    ninjaTurtles.push(element.toUpperCase())
+})
+console.log(ninjaTurtles)
 // 2. Use a for loop to call .toUpperCase() on each of them and print out the result.
-for (let i = 0; i < 5; i++) {
-    console.log()
-}
+// Answer: *.toUpperCase logic-- Note: to self Review* https://bobbyhadz.com/blog/javascript-convert-all-elements-of-array-to-uppercase
+
 
 unfinished assignment =0(!!!!!!!
