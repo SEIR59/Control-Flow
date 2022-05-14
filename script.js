@@ -28,20 +28,20 @@
 
 
 
-for (i = 0; i <= 20; i++) {
-  if (i % 2 === 0) {
-    r = Math.floor(Math.random() * 3);
-    if (r === 0) {
-      console.log("...human...why you taking pictures of me?...");
-    } else if (r === 1) {
-      console.log("...the catnip made me do it...");
-    } else {
-      console.log("...why does the red dot always get away...");
-    }
-  } else {
-    console.log(i);
-  }
-} 
+// for (i = 0; i <= 20; i++) {
+//   if (i % 2 === 0) {
+//     r = Math.floor(Math.random() * 3);
+//     if (r === 0) {
+//       console.log("...human...why you taking pictures of me?...");
+//     } else if (r === 1) {
+//       console.log("...the catnip made me do it...");
+//     } else {
+//       console.log("...why does the red dot always get away...");
+//     }
+//   } else {
+//     console.log(i);
+//   }
+// } 
 
 
 
@@ -54,21 +54,22 @@ for (i = 0; i <= 20; i++) {
 
 // // // // // > NOTE: THIS IS A CLASSIC RITE-OF-PASSAGE FOR JAVASCRIPT PROGRAMMERS, ESPECIALLY ONES AT GA
 
-// // // // // Write a javascript application that logs all numbers from 1 - 100 **AND**:
+// Write a javascript application that logs all numbers from 1 - 100 **AND**:
 
-// // // // // for (let i = 1; i< 101; i++){
-// // // // //   if (i % 3 === 0 && i % 5 === 0){
-// // // // //     console.log("Fizzbuzz");
-// // // // //   } else if (i % 3 === 0){
-// // // // //     console.log("Fizz");
-// // // // //   } else if (i % 5 === 0){
-// // // // //     console.log("Buzz");
-// // // // //   }
-// // // // // }
-
-// // // // // 1. If a number is divisible by 3 log "Fizz" instead of the number.
-// // // // // 1. If a number is divisible by 5 log "Buzz" instead of the number.
-// // // // // // 1. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number, "Fizz", or "Buzz".
+for (let i = 1; i< 101; i++){
+  if (i % 3 === 0 && i % 5 === 0){
+    console.log("Fizzbuzz");
+  } else if (i % 3 === 0){
+    console.log("Fizz");
+  } else if (i % 5 === 0){
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+} 
+// 1. If a number is divisible by 3 log "Fizz" instead of the number.
+// 1. If a number is divisible by 5 log "Buzz" instead of the number.
+// 1. If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number, "Fizz", or "Buzz".
 
 // // // // // // ## Getting to Know You
 
