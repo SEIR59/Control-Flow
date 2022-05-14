@@ -28,19 +28,20 @@
 
 
 
-// // for (i = 0; i <= 20; i++){
-// //   console.log("Love me, pet me! HSSSSSS!")
-// //   if (i%2 ===0){
-// //   r = Math.floor(Math.random()*3);
-// //   if (r === 0) {
-// //     console.log("...human...why you taking pictures of me?...")
-// //   } else if (r === 1) {
-// //     console.log("...the catnip made me do it...")
-// //   } else if (r === 0) {
-// //     console.log("...why does the red dot always get away...")
-// //   }
-// // }
-// // } 
+for (i = 0; i <= 20; i++) {
+  if (i % 2 === 0) {
+    r = Math.floor(Math.random() * 3);
+    if (r === 0) {
+      console.log("...human...why you taking pictures of me?...");
+    } else if (r === 1) {
+      console.log("...the catnip made me do it...");
+    } else {
+      console.log("...why does the red dot always get away...");
+    }
+  } else {
+    console.log(i);
+  }
+} 
 
 
 
@@ -213,19 +214,19 @@
 
 // If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-let mult = [];
-for (i = 0; i <= 1000; i++){
-  if ( i%3 === 0 || i%5 === 0){
-    mult.push(i);
+// let mult = [];
+// for (i = 0; i <= 1000; i++){
+//   if ( i%3 === 0 || i%5 === 0){
+//     mult.push(i);
     
-  }
-} 
-sum = 0
-for (i = 0; i < mult.length; i++){
-  sum = sum + mult[i];
-}
+//   }
+// } 
+// sum = 0
+// for (i = 0; i < mult.length; i++){
+//   sum = sum + mult[i];
+// }
 
-console.log(sum);
+// console.log(sum);
 
 // Find the **sum** of all the multiples of 3 or 5 below 1000.
 
