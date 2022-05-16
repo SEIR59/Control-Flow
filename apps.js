@@ -85,3 +85,14 @@ const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let i = 0; i < ninjaTurtles.length; i++) {
 		console.log(ninjaTurtles[i].toUpperCase());
 }
+
+// Return of the Closets //
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
