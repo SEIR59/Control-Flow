@@ -96,3 +96,47 @@ const kristynsCloset = [
   "yellow knit hat",
   "marshmallow peeps"
 ];
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire - #1
+const kristynsShoe = kristynsCloset[0];
+kristynsCloset.splice(0,1);
+thomsCloset[2].push(kristynsShoe);
+
+//Dress 'em Up - #1
+console.log("Kristyn is wearing a " + kristynsCloset[3] +" with a " 
+	+ kristynsCloset[4] + " and a " + kristynsCloset[5]  +"." );
+console.log("Thom is wearing a " + thomsCloset[0][2] +" with " 
+	+ thomsCloset[1][0] + " and a " + thomsCloset[2][2]  +"." );
+	
+// Dirty Laundry //
+// 1
+for (let i = 0; i < kristynsCloset.length; i++) {
+	console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+// 2
+for (let i = 0; i < thomsCloset.length; i++) {
+	console.log(thomsCloset[i]);
+}
+	
+	
