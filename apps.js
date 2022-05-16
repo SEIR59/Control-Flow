@@ -140,3 +140,12 @@ for (let i = 0; i < thomsCloset.length; i++) {
 }
 	
 	
+// Multiple of 3 and 5 //
+let sumOfMulitpleOfThreeAndFive = 0;
+let arrayOfNumbersMultipleOfThreeAndFive = [];
+for (let i = 1; i < 1000; i++) {
+	if ((i % 3 === 0) || i%5 === 0){
+		sumOfMulitpleOfThreeAndFive += i;
+	}
+}
+console.log(sumOfMulitpleOfThreeAndFive);
