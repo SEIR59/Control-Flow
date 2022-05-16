@@ -1,15 +1,17 @@
 // Easy Going
+console.log("Easy going");
 for ( let i = 1; i <= 20; i++) {
     console.log(i)
 }
 
+console.log("Get Even");
 // Get Even // 0 is an even number. //
 for (let i = 0; i <= 200; i++) {
     if (i % 2 === 0) {
         console.log(i);
     }
 }
-
+console.log("Excited Kitten");
 // Excited Kitten
 const arrKittenSpeak = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
 let randomNum;
@@ -20,7 +22,7 @@ for (let i = 0; i < 20; i++){
         console.log(arrKittenSpeak[randomNum]);
     }
 }
-
+console.log("Fizz Buzz");
 // Fizz Buzz
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
@@ -33,13 +35,19 @@ for (let i = 1; i <= 100; i++) {
         console.log(i)
     }
 }
-
+console.log("Getting to know you");
 // Getting to Know You
 const kenny = ["Kenny", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
 const jimClark = ["Jim C", 186, "LA"];
 const ryan = ["Ryan", 65, "Denver"];
+console.log("Before");
+console.log(kenny);
+console.log(jimHaff);
+console.log(reuben);
+console.log(jimClark);
+console.log(ryan);
 // 1.
 kenny[0] = "Gameboy"
 
@@ -60,6 +68,13 @@ jimHaff.push("New York", "Goshen", "Ozone Park");
 // 6. 
 jimHaff.splice(2,1);
 
+console.log("After");
+console.log(kenny);
+console.log(jimHaff);
+console.log(reuben);
+console.log(jimClark);
+console.log(ryan);
+console.log("Yell at the Ninja turtles");
 // Yell at the Ninja turtles
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 let currentTurtle;
@@ -76,7 +91,7 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
     }
     console.log(funkyTurtle);
 }
-
+console.log("Return of the Closets");
 // Return of the Closets
 const kristynsCloset = [
     "left shoe",
@@ -114,63 +129,55 @@ const kristynsCloset = [
 
     //  Dress 'e, Up
     // Kristyn's outfit
-    let firstItem;
-    let secondItem;
-    let thirdItem;
+    let firstItemkristyn;
+    let secondItemkristyn;
+    let thirdItemkristyn;
     
-    let numOfItems = kristynsCloset.length;
-    firstItem = kristynsCloset[Math.floor(Math.random() * numOfItems)];
-    secondItem = kristynsCloset[Math.floor(Math.random() * numOfItems)];
-    thirdItem = kristynsCloset[Math.floor(Math.random() * numOfItems)];
+    let numOfItemskristyn = kristynsCloset.length;
+    firstItem = kristynsCloset[Math.floor(Math.random() * numOfItemskristyn)];
+    secondItem = kristynsCloset[Math.floor(Math.random() * numOfItemskristyn)];
+    thirdItem = kristynsCloset[Math.floor(Math.random() * numOfItemskristyn)];
 
 
 
-    let todaysOutfit = `Kristyn is wearing ${firstItem}, a ${secondItem} and a ${thirdItem}.`; 
-    console.log(todaysOutfit);
+    let todaysOutfitKristyn = `Kristyn is wearing ${firstItem}, a ${secondItem} and a ${thirdItem}.`; 
+    console.log(todaysOutfitKristyn);
 
     // Thoms Outfit
-    let firstItem;
-    let secondItem;
-    let thirdItem;
+    let firstItemTom;
+    let secondItemTom;
+    let thirdItemTom;
     
-    let numOfItems = thomsCloset[0].length;
-    let numOfItemsTwo = thomsCloset[1].length;
-    let numOfItemsThree = thomsCloset[2].length;
-    firstItem = thomsCloset[0][Math.floor(Math.random() * numOfItems)];
-    secondItem = thomsCloset[1][Math.floor(Math.random() * numOfItemsTwo)];
-    thirdItem = thomsCloset[2][Math.floor(Math.random() * numOfItemsThree)];
-    console.log(numOfItems + " " + firstItem)
-    console.log(numOfItemsTwo + " " + secondItem)
-    console.log(numOfItemsThree + " " + thirdItem)
+    let numOfItemsTom = thomsCloset[0].length;
+    let numOfItemsTwoTom = thomsCloset[1].length;
+    let numOfItemsThreeTom = thomsCloset[2].length;
+    firstItemTom = thomsCloset[0][Math.floor(Math.random() * numOfItemsTom)];
+    secondItemTom = thomsCloset[1][Math.floor(Math.random() * numOfItemsTwoTom)];
+    thirdItemTom = thomsCloset[2][Math.floor(Math.random() * numOfItemsThreeTom)];
 
 
-
-
-
-    let todaysOutfit = `Thom is wearing a ${firstItem}, some ${secondItem} and a ${thirdItem}.`; 
-    console.log(todaysOutfit);
+    let todaysOutfitTom = `Thom is wearing a ${firstItemTom}, some ${secondItemTom} and a ${thirdItemTom}.`; 
+    console.log(todaysOutfitTom);
 
     // 2. Dirty Laundry
     // kristynsCloset
-    let numItems = kristynsCloset.length
-    for (let i = 0; i < numItems; i++) {
+    let numItemsToWashKristyn = kristynsCloset.length
+    for (let i = 0; i < numItemsToWashKristyn; i++) {
         console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
     }
 
     // thomsCloset
-    let numItems;
+    let numItemsToWashTom;
     for (let i = 0; i < thomsCloset.length; i++) {
-        numItems = thomsCloset[i].length
-        for (let j = 0; j < numItems; j++) {
+        numItemsToWashTom = thomsCloset[i].length
+        for (let j = 0; j < numItemsToWashTom; j++) {
             console.log(`WHIRR: Now washing ${thomsCloset[i][j]}`);
         }
     }
 
     // 2. Inventory
     const thomsInventory = {
-        shirts: [],
-        pants: [],
-        accessories: []Í
+
     };
 
     for (let i = 0; i < thomsCloset.length; i++) {
@@ -182,7 +189,12 @@ const kristynsCloset = [
             thomsInventory.accessories = thomsCloset[i];
         }
     }
+    console.log("Thoms Inventory");
+    console.log(thomsInventory['shirts']);    
+    console.log(thomsInventory['pants']);
+    console.log(thomsInventory['accessories']);
 
+    console.log("Multiples of 3 and 5");
 // Multiples of 3 and 5
 let total = 0;
 for (let i = 0; i < 1000; i++) {
@@ -190,51 +202,54 @@ for (let i = 0; i < 1000; i++) {
         total += i;
     }
 }
+console.log(total);
 
+console.log("Hungry for more?")
 // Hungry for more?
+console.log("Triangle 1");
 // Triangles 1
-const argument = 7;
-let currentLine = "";
-for (let i = 0; i < argument; i++) {
-    currentLine = currentLine.concat("#") 
-    console.log(currentLine);
+const argument1 = 7;
+let currentLine1 = "";
+for (let i = 0; i < argument1; i++) {
+    currentLine1 = currentLine1.concat("#") 
+    console.log(currentLine1);
 }
-
+console.log("Triangle 2");
 // Triangles 2
-const argument = 7;
-let currentLine = "";
-for (let i = 0; i < argument; i++) {
+const argument2 = 7;
+let currentLine2 = "";
+for (let i = 0; i < argument2; i++) {
     let extraSpace = "";
-    for (let j = i + 1; j < argument; j++) {
+    for (let j = i + 1; j < argument2; j++) {
         extraSpace = extraSpace.concat(" ");
     }
-    currentLine = currentLine.concat("#") 
-    console.log(extraSpace + currentLine);
+    currentLine2 = currentLine2.concat("#") 
+    console.log(extraSpace + currentLine2);
 }
-
+console.log("Triangle 3");
 // Triangles 3
-let currentLine;
-const argument = 7;
-for (let i = 0; i < argument; i++) {
-    currentLine = ""
-    for (let j = i; j < argument; j++) {
-        currentLine = currentLine.concat("#");
+let currentLine3;
+const argument3 = 7;
+for (let i = 0; i < argument3; i++) {
+    currentLine3 = ""
+    for (let j = i; j < argument3; j++) {
+        currentLine3 = currentLine3.concat("#");
     }
-    console.log(currentLine);
+    console.log(currentLine3);
 }
-
+console.log("Triangle 4");
 // Triangles 4
-const argument = 7;
-let extraSpace = "";
-for (let i = 0; i < argument; i++) {
+const argument4 = 7;
+let extraSpace4 = "";
+for (let i = 0; i < argument4; i++) {
     let currentLine = "";
-    for (let j = i; j < argument; j++) {
+    for (let j = i; j < argument4; j++) {
         currentLine = currentLine.concat("#") 
     }
-    extraSpace = extraSpace.concat(" ");
-    console.log(extraSpace + currentLine);
+    extraSpace4 = extraSpace4.concat(" ");
+    console.log(extraSpace4 + currentLine);
 }
-
+console.log("Find the Median");
 // find the Median
 const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
 let arrLength = nums.length;
