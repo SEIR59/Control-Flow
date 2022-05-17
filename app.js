@@ -57,5 +57,12 @@
     //jimHaff.push("Singapore", "Hong Kong", "Shanghai");
     //console.log(jimHaff);
 
-6. 
+6. yell at the ninja turtles
+
+const ninjaTurtles = [Donatello, Leonardo, Raphael, Michaelangelo];
+
+for(i = 0; i <ninjaTurtles.length; i++);
+
+ninjaTurtle[i] = ninjaturtle[i].toUpperCase();
+console.log(ninjaTurtle);
 
