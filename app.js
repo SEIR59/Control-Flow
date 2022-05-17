@@ -39,14 +39,14 @@ kenny[0] = "Gameboy";
 jimClark[1]++;
 ryan[2] = "Gotham City";
 reuben.pop();
-reuben.push("Chicago";)
+reuben.push("Chicago")
 jimHaff.pop()
 jimHaff.push("New York City", "San Francisco", "Guangzhou");
 
 let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 for (let n = 0; n < ninjaTurtles.length; n++) {
-    let currentTurtle = ninjaTurtles[i];
+    let currentTurtle = ninjaTurtles[n];
 
     currentTurtle.toUpperCase();
 }
@@ -104,5 +104,3 @@ let multipleSum = 0;
 for (let o = 0; o <= 1000; o++){
    if (o % 3 === 0 || o % 5 === 0) multipleSum += o;
 }
-
-console.log(multipleSum);
