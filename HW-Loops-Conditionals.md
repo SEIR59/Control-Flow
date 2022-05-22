@@ -35,14 +35,14 @@ Language: JavaScript <br>
 "Commit 1 - Easy Going answered"
 <hr> -->
 
-## Get Even
+<!-- ## Get Even
 1. Write a `for` loop that will log only the even numbers in 0 through 200.
 >Hint: Think about the increment expression.
 
 <hr>
 &#x1F534; The commit message should read: <br>
 "Commit 2 - Get Even answered"
-<hr>
+<hr> -->
 
 ## Excited Kitten
 1. Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
